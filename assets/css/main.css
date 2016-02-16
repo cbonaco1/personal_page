@@ -216,6 +216,14 @@ a:after {
   width: 100px;
 }
 
+.gold-rotations-title {
+  cursor: pointer;
+}
+
+.rotation-description {
+  display: none;
+}
+
 /* Intnro Wrap */
 
 #intro {
@@ -251,6 +259,7 @@ a:after {
 .social-link {
   float: left;
   color: #1abc9c;
+  padding-right: 25px;
 }
 
 .social-link a:hover {
