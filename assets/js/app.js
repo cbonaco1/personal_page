@@ -1,5 +1,5 @@
 $(document).ready(function(){
   $(".gold-rotations-title").hover(function(){
-      $(this).find(".rotation-description").show();
+      $(this).next(".rotation-description").toggle(300);
   });
 });
