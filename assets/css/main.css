@@ -224,14 +224,13 @@ a:after {
   overflow: hidden;
 }
 
-.logo-group img {
+.logos {
+  height: 110px;
   width: 100px;
-  height: 100px;
-  position: absolute;
 }
 
 .col-xs-6 {
-  border:1px solid;
+  /*border:1px solid;*/
 }
 
 
