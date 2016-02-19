@@ -209,13 +209,16 @@ a:after {
 	color: white;
 }
 
+.section-header {
+  padding-top: 10px;
+}
+
 .education-info {
   /*float:left;*/
 }
 
 .logo-group {
-  /*text-align: center;*/
-  /*float:left;*/
+  text-align: center;
 }
 
 .logo-image-container {
@@ -250,6 +253,10 @@ a:after {
   cursor: pointer;
 }
 
+.gold-rotations-bullet {
+  padding-right: 6px;
+}
+
 .rotation-description {
   display: none;
   list-style-type:disc;
@@ -258,6 +265,24 @@ a:after {
 
 .portfolio-screenshot {
   border-radius: 10px;
+  height: 300px;
+}
+
+.screenshot-container {
+  position: relative;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.screenshot-container:hover::after {
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  border-radius: 10px;
+  background: rgba(60,110,160,0.5);
 }
 
 .scheduler-screenshot {
@@ -304,6 +329,15 @@ a:after {
 
 .social-link a:hover {
   color: red;
+}
+
+.email-link {
+  color:white;
+}
+
+.email-link:hover {
+  color:white;
+  text-decoration: underline;
 }
 
 #footwrap {

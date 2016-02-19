@@ -40,10 +40,16 @@
 				<div class="row">
 					<div class="dropdown">
 						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#about" title="About">ABOUT</a></li>
+							<li class="menu-item">
+                <a class="smoothScroll" href="./assets/docs/ChristianBonacoreResume.pdf" title="Resume" target="_blank">
+                  <i class="icon-file-text"></i>
+                </a>
+              </li>
+              <li class="menu-item"><a class="smoothScroll" href="#work" title="Works">WORK</a></li>
+              <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills">SKILLS</a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#portfolio" title="Portfolio">PORTFOLIO</a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact">CONTACT</a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -80,7 +86,7 @@
 					<p>
             I am a NYC-based software engineer passionate about building products that help people.
             I take pride in putting great detail into my work, and focusing on the user experience.
-            Outside of coding, I enjoy sports, the beach, and a good cup of coffee. Keep scrolling down
+            Outside of coding, I enjoy sports, the beach, and a good cup of coffee. Feel free to read on
             to find out more about me and my story.
           </p>
 				</div>
@@ -92,8 +98,8 @@
 	</div><!--/ #intro -->
 
 
-	<section id="resume" name="resume"></section>
 	<!--EDUCATION DESCRIPTION -->
+  <section id="education" name="education" class="section-header"></section>
 	<div class="container desc">
     <div class="row">
 
@@ -112,7 +118,7 @@
             </i>
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 logo-group">
           <img src="./assets/img/app-academy.png" class="logos"/>
 					<p><sm>2015</sm><br/></p>
 				</div>
@@ -123,7 +129,7 @@
 						<i>Computer Science</i>
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 logo-group">
           <img src="./assets/img/binghamton.png" class="logos"/>
 					<p><sm>MAY 2012</sm></p>
 				</div>
@@ -135,6 +141,7 @@
 
 
 	<!--WORK DESCRIPTION -->
+  <section id="work" name="work" class="section-header"></section>
 	<div class="container desc">
 		<div class="row">
 
@@ -151,7 +158,7 @@
             for both employees and contractors. Also co-led corporate TFS version upgrade.
           </more></p>
 				</div>
-				<div class="col-lg-2 col-lg-offset-1 logo-group">
+				<div class="col-lg-3 logo-group">
           <img src="./assets/img/conEd.png" class="logos" />
 					<p><sm>2012 - 2015</sm></p>
           <br>
@@ -166,6 +173,7 @@
             in various areas of the company. My rotations are listed below (hover over for more detail):
               <ul class="gold-rotations">
                 <li>
+                  <i class="icon-chevron-right gold-rotations-bullet"></i>
                   <t class="gold-rotations-title">System Analyst - Information Resources</t>
                   <ul class="rotation-description">
                     <li>Stabilization of newly released Oracle EBS application,
@@ -177,6 +185,7 @@
                   </ul>
                 </li>
                 <li>
+                  <i class="icon-chevron-right gold-rotations-bullet"></i>
                   <t class="gold-rotations-title">Operating Supervisor - Manhattan Gas Construction</t>
                   <ul class="rotation-description">
                     <li>Supervised company union workforce and contractors installing capital and new business gas work. </li>
@@ -188,6 +197,7 @@
                   </ul>
                 </li>
                 <li>
+                  <i class="icon-chevron-right gold-rotations-bullet"></i>
                   <t class="gold-rotations-title">Operating Supervisor - Cranes & Rigging</t>
                   <ul class="rotation-description">
                     <li>Supervised crane operators and riggers responsible for providing support for internal customers</li>
@@ -198,7 +208,7 @@
               </ul>
           </more></p>
 				</div>
-				<div class="col-lg-2 col-lg-offset-1 logo-group">
+				<div class="col-lg-3 logo-group">
           <img src="./assets/img/conEd.png" class="logos" />
 					<p><sm>2012</sm></p>
           <br>
@@ -209,6 +219,7 @@
 	</div><!--/.container -->
 
 	<!--SKILLS DESCRIPTION -->
+  <section id="skills" name="skills"></section>
 	<div id="skillswrap">
 		<div class="container">
 			<div class="row">
@@ -268,7 +279,7 @@
 
 
 
-	<section id="work" name="work"></section>
+	<section id="portfolio" name="portfolio" class="section-header"></section>
 	<!--PORTFOLIO DESCRIPTION -->
 	<div class="container desc">
 		<div class="row">
@@ -276,8 +287,10 @@
 					<h5>PORTFOLIO</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><img class="img-responsive portfolio-screenshot"
-            src="assets/img/screenshots/feather-note.png" alt=""></p>
+					<div class="screenshot-container">
+            <img class="img-responsive portfolio-screenshot"
+            src="assets/img/screenshots/feather-note.png" alt="">
+          </div>
 				</div>
 				<div class="col-lg-3">
 					<p><a href="http://feather-note.herokuapp.com/" target="_blank">
@@ -293,8 +306,12 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive portfolio-screenshot"
-            src="assets/img/screenshots/dino_jump.png" alt=""></p>
+					<div class="screenshot-container">
+            <a href="http://feather-note.herokuapp.com/" target="_blank">
+              <img class="img-responsive portfolio-screenshot"
+              src="assets/img/screenshots/dino_jump.png" alt="">
+            </a>
+          </div>
 				</div>
 				<div class="col-lg-3">
 						<p><a href="http://cbonaco1.github.io/dino_jump" target="_blank">
@@ -311,8 +328,12 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive portfolio-screenshot scheduler-screenshot"
-            src="assets/img/screenshots/scheduler.png" alt=""></p>
+					<div class="screenshot-container">
+            <a href="http://cbonaco1.github.io/dino_jump" target="_blank">
+              <img class="img-responsive portfolio-screenshot scheduler-screenshot"
+              src="assets/img/screenshots/scheduler.png" alt="">
+            </a>
+          </div>
 				</div>
 				<div class="col-lg-3">
 						<p>Barbershop Appointment Scheduler</p>
@@ -345,7 +366,9 @@
 				</div>
 				<div class="col-lg-6">
 					<p><t>Email</t><br/>
-						christian.bonacore@gmail.com <br/>
+            <a href="mailto:christian.bonacore@gmail.com" class="email-link">
+              christian.bonacore@gmail.com
+            </a> <br/>
 					</p>
           <p>
             Download a copy of my resume
