@@ -7,5 +7,10 @@ $(document).ready(function(){
       $(this).prev().toggleClass("icon-rotate-90", 300);
   });
 
-  
+  $(".screenshot-container").hover(function() {
+    console.log("hovered");
+    $(this).children(".portfolio-hover").toggle();
+  });
+
+
 });

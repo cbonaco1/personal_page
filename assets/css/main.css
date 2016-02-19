@@ -229,15 +229,8 @@ a:after {
 
 .logos {
   height: 110px;
-  width: 100px;
+  width: 110px;
 }
-
-.col-xs-6 {
-  /*border:1px solid;*/
-}
-
-
-
 
 .skill-logo img {
   /*border:1px solid red;*/
@@ -279,7 +272,26 @@ a:after {
   cursor: pointer;
 }
 
-.screenshot-container:hover::after {
+.portfolio-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: rgba(60,110,160,0.5);
+  z-index: 100;
+}
+
+.portfolio-hover p {
+  color: white;
+}
+
+/*.screenshot-container:hover::after {
   position: absolute;
   top:0;
   right: 0;
@@ -288,7 +300,7 @@ a:after {
   content: '';
   border-radius: 10px;
   background: rgba(60,110,160,0.5);
-}
+}*/
 
 .scheduler-screenshot {
   border: 1px solid #aaa;
