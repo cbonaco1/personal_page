@@ -41,15 +41,16 @@
 					<div class="dropdown">
 						<ul id="nav" class="nav">
 							<li class="menu-item"><a class="smoothScroll" href="#about" title="About">ABOUT</a></li>
-							<li class="menu-item">
-                <a class="smoothScroll" href="./assets/docs/ChristianBonacoreResume.pdf" title="Resume" target="_blank">
-                  <i class="icon-file-text"></i>
-                </a>
-              </li>
               <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills">SKILLS</a></li>
 							<li class="menu-item"><a class="smoothScroll" href="#portfolio" title="Portfolio">PORTFOLIO</a></li>
               <li class="menu-item"><a class="smoothScroll" href="#work" title="Works">WORK</a></li>
 							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact">CONTACT</a></li>
+              <li class="menu-item">
+                <a class="smoothScroll" href="./assets/docs/ChristianBonacoreResume.pdf" title="Resume" target="_blank">
+                  <!-- <i class="icon-file-text"></i> -->
+                  RESUME
+                </a>
+              </li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -126,7 +127,9 @@
 				<div class="col-lg-6 col-lg-offset-3">
 					<p><t>Bachelor's of Science</t><br/>
 						Binghamton University <br/>
-						<i>Computer Science</i>
+						<i>Computer Science</i><br />
+            <i><u>Relevant Coursework:</u></i><br />
+            <i>Algorithms, Operating Systems, Internet Programming, Programming Languages</i>
 					</p>
 				</div>
 				<div class="col-lg-3 logo-group">
@@ -285,7 +288,7 @@
             <br/>
             <ul class="portfolio-links group">
               <li class="portfolio-link">
-                <a href="#">Demo</a>
+                <button id="showDemoButton" onclick="showDemo()">Demo</button>
               </li>
               <li class="portfolio-link"> | </li>
               <li class="portfolio-link">
@@ -401,7 +404,6 @@
           </p>
           <p>Also connect with me on these networks:</p>
           <ul class="social-links group">
-            <!-- add hover effect ot these -->
             <li class="social-link">
               <a href="https://github.com/cbonaco1/" target="_blank">
                 <i class="icon-github icon-3x"></i>
@@ -426,18 +428,11 @@
 		</div><!--/.container -->
 	</div><!--/ #footer -->
 
-	<!-- <div id="c">
-		<div class="container">
-      <p>Cann I get rid of this?</p>
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
-
-		</div>
-	</div> -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.js"></script>
+
   </body>
 </html>

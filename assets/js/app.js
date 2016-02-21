@@ -8,7 +8,7 @@ $(document).ready(function(){
   });
 
   $(".screenshot-container").hover(function() {
-    console.log("hovered");
+    // console.log("hovered");
     $(this).children(".portfolio-hover").toggle();
   });
 
