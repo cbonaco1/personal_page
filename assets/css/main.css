@@ -449,3 +449,20 @@ sm {
   height: 100%;
   background: red;
 }
+
+
+/* Media Queries */
+/* At width 360px, #headerwrap h1 - font-size: 70px */
+@media only screen and (max-width: 360px) {
+  #headerwrap h1 {
+    font-size: 70px;
+  }
+
+  .menu-item {
+    width: 33%;
+  }
+
+  .mobile-bottom {
+    border-top: 1px solid #222;
+  }
+}
