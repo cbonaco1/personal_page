@@ -137,6 +137,8 @@ a:after {
 	/* For IE, the outcast */
 	zoom:1;
 	*display: inline;
+
+  max-width: 525px;
 }
 
 #section-topbar ul#nav > li {
@@ -433,9 +435,6 @@ sm {
   top: 10px;
   height: 100px;
   width: 200px;
-  /*height:95%;*/
-  /*border-bottom:1px solid #CECECE;*/
-  /*width:100%;*/
 }
 
 #scheduler-modal {
@@ -452,12 +451,13 @@ sm {
 
 
 /* Media Queries */
-/* At width 360px, #headerwrap h1 - font-size: 70px */
 @media only screen and (max-width: 360px) {
   #headerwrap h1 {
     font-size: 70px;
   }
+}
 
+@media only screen and (max-width: 535px) {
   .menu-item {
     width: 33%;
   }
