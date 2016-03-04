@@ -180,12 +180,12 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-  background: url(../img/nyc_stock.jpg) no-repeat center top;
-	margin-top: 54px;
+  background: url(../img/nyc_stock.jpg) no-repeat center center;
+	/*margin-top: 54px;*/
 	padding-top:80px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+	background-attachment: fixed;
+	background-position: center bottom;
 	min-height: 500px;
 	width: 100%;
 
