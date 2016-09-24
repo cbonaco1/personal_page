@@ -1,16 +1,38 @@
 $(document).ready(function(){
 
-  //Display description of a GOLD rotation when
-  //hovering over its title
-  $(".gold-rotations-title").hover(function(){
-      $(this).next(".rotation-description").toggle(300);
-      $(this).prev().toggleClass("icon-rotate-90", 300);
-  });
+    var currentScoll = 0;
+    $(window).scroll(function() {
+        var win = window,
+            doc = document,
+            newScroll = win.scrollY,
+            topBarStyles = doc.getElementById("section-topbar").style;
 
-  $(".screenshot-container").hover(function() {
-    // console.log("hovered");
-    $(this).children(".portfolio-hover").toggle();
-  });
+        // If current scroll position is greater than currentScoll,
+        // then user is scrolling down, so hide the nav bar
+        if (newScroll > currentScoll) {
+            topBarStyles.opacity = "0";
+        }
+        // If less than currentScoll, then scrolling up
+        else {
+            topBarStyles.opacity = "1";
+        }
+
+        // Update currentScoll regardless so next scroll
+        // has current scroll position to compare to
+        currentScoll = newScroll;
+
+    });
+
+    //Display description of a GOLD rotation when
+    //hovering over its title
+    $(".gold-rotations-title").click(function(){
+        $(this).next(".rotation-description").toggle(300);
+        $(this).prev().toggleClass("icon-rotate-90", 300);
+    });
+
+    $(".screenshot-container").hover(function() {
+        $(this).children(".portfolio-hover").toggle();
+    });
 
 
 });

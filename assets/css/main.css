@@ -41,7 +41,6 @@ ul {
   clear: both;
 }
 
-
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
@@ -102,6 +101,9 @@ a:after {
 	z-index: 10000;
 	overflow: visible;
 	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
 }
 
 #section-topbar a {
@@ -162,6 +164,10 @@ a:after {
 	  border-left: 1px solid #111;
 	}
 
+    #section-topbar ul#nav a:focus {
+        background-color: #111;
+    }
+
 	#section-topbar ul#nav .active a {
 		background: #44bbaa;
 		border-left: 1px solid #111;
@@ -180,12 +186,12 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-  background: url(../img/nyc_stock.jpg) no-repeat center center;
-	/*margin-top: 54px;*/
+    background-image: url(../img/nyc_stock.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 	padding-top:80px;
 	text-align:center;
-	background-attachment: fixed;
-	background-position: center bottom;
 	min-height: 500px;
 	width: 100%;
 
@@ -450,13 +456,9 @@ sm {
 }
 
 
-/* Media Queries */
-@media only screen and (max-width: 360px) {
-  #headerwrap h1 {
-    font-size: 70px;
-  }
-}
-
+/* Use 535px as breakpoint here because that is the width
+of 3 menu items in the top nav bar.
+This is setting breakpoints according to design, not devices. */
 @media only screen and (max-width: 535px) {
   .menu-item {
     width: 33%;
@@ -464,5 +466,15 @@ sm {
 
   .mobile-bottom {
     border-top: 1px solid #222;
+  }
+
+  #headerwrap {
+      background-image: none;
+      background-color: #838383;
+  }
+
+  #headerwrap h1 {
+    font-size: 70px;
+    padding-top: 8px;
   }
 }
