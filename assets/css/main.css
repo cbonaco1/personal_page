@@ -67,7 +67,6 @@ a:hover,
 a:focus {
     color: #7b7b7b;
     text-decoration: none;
-    outline: 0;
 }
 
 a:before,
@@ -309,7 +308,16 @@ a:after {
   background: rgba(60,110,160,0.5);
 }*/
 
-.scheduler-screenshot {
+#aba-contact-us-link {
+    text-decoration: underline;
+    color: inherit;
+}
+
+#aba-contact-us-link:hover {
+    color: #7b7b7b;
+}
+
+.white-screenshot {
   border: 1px solid #aaa;
 }
 
@@ -414,6 +422,10 @@ a:after {
 
 .desc p {
 	color: #2f2f2f;
+}
+
+.desc p#aba-title {
+    margin-bottom: 10px;
 }
 
 .desc t {
