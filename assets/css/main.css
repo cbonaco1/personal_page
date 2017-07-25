@@ -87,6 +87,10 @@ a:after {
     padding: 0;
 }
 
+.blue-background {
+    background: #2c3e50;
+}
+
 
 /*---------------------------------------------------
 	3.1 Topbar
@@ -262,14 +266,24 @@ a:after {
   margin-left: 30px;
 }
 
-.portfolio-screenshot {
+#portfolio .portfolio-screenshot {
   border-radius: 10px;
   height: 300px;
 }
 
-.portfolio-link {
+#portfolio .portfolio-link {
   float: left;
   padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid #fff;
+}
+
+#portfolio .portfolio-link:last-child {
+    border-right: 0px;
+}
+
+#portfolio .portfolio-link:first-child {
+    padding-left: 0px;
 }
 
 .screenshot-container {
@@ -278,7 +292,7 @@ a:after {
   cursor: pointer;
 }
 
-.portfolio-hover {
+#portfolio  .portfolio-hover {
   display: none;
   position: absolute;
   top: 0;
@@ -297,6 +311,19 @@ a:after {
   color: white;
 }
 
+#portfolio .portfolio-description .portfolio-title {
+    color: #fff;
+    font-weight: 700;
+}
+
+#portfolio .portfolio-description .portfolio-title:hover {
+    color: #f85c37;
+}
+
+#portfolio .portfolio-description #aba-contact-us-link {
+    text-decoration: underline;
+}
+
 /*.screenshot-container:hover::after {
   position: absolute;
   top:0;
@@ -307,15 +334,6 @@ a:after {
   border-radius: 10px;
   background: rgba(60,110,160,0.5);
 }*/
-
-#aba-contact-us-link {
-    text-decoration: underline;
-    color: inherit;
-}
-
-#aba-contact-us-link:hover {
-    color: #7b7b7b;
-}
 
 .white-screenshot {
   border: 1px solid #aaa;
@@ -346,10 +364,6 @@ a:after {
 	background: #2c3e50;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	color: white;
-}
-
-#skillswrap h5, p {
 	color: white;
 }
 
@@ -424,7 +438,7 @@ a:after {
 	color: #2f2f2f;
 }
 
-.desc p#aba-title {
+.desc #aba-title {
     margin-bottom: 10px;
 }
 
@@ -441,6 +455,18 @@ a:after {
 
 .desc more {
 	color: #2f2f2f;
+}
+
+.blue-background .desc more {
+    color: #fff;
+}
+
+.blue-background h5, p, a {
+    color: #fff;
+}
+
+.blue-background a:hover {
+    color: #f85c37;
 }
 
 
