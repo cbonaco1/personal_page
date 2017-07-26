@@ -105,6 +105,7 @@ a:after {
 	overflow: visible;
 	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     opacity: 1;
+    visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }

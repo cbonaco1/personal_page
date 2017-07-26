@@ -11,10 +11,12 @@ $(document).ready(function(){
         // then user is scrolling down, so hide the nav bar
         if (newScroll > currentScoll) {
             topBarStyles.opacity = "0";
+            topBarStyles.visibility = "hidden";
         }
         // If less than currentScoll, then scrolling up
         else {
             topBarStyles.opacity = "1";
+            topBarStyles.visibility = "visible";
         }
 
         // Update currentScoll regardless so next scroll
