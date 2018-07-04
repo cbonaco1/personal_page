@@ -1,0 +1,13 @@
+{
+  "name": "personal_page",
+  "version": "1.0.0",
+  "description": "This contains code for my personal website. The site serves as a means to display programming work I have done, along with a professional resume. Have a look [here](http://christianbonacore.tech/)!",
+  "main": "index.js",
+  "scripts": {
+      "css": "node-sass -o assets/css scss/",
+      "css-watch": "npm run css && node-sass scss/ --watch --output assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

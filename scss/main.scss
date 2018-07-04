@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixins";
+
+body, section, h1, h2, h3, h4, h5, h6, div, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    @include border-box-sizing;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.page-section {
+    text-align: center;
+}
+
+#about.page-section {
+    position: relative;
+    .top-section, .bottom-section {
+        height: 50vh;
+    }
+    .bottom-section {
+        background-color: $blue-font-color;
+        color: $white;
+        padding-top: 30px;
+    }
+    .middle-icon {
+        display: none;
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .down-arrow {
+        position: absolute;
+        bottom: 20px;
+        color: $white;
+    }
+}
+
+.my-picture {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (min-width: $min-mobile-width) {
+    #about.page-section {
+        @include display-flex;
+        .top-section, .bottom-section {
+            height: 100vh;
+            width: 50%;
+            @include display-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bottom-section {
+            padding: 0px 40px;
+        }
+        .down-arrow {
+            right: 25%;
+        }
+    }
+}
