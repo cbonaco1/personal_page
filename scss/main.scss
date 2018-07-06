@@ -1,17 +1,24 @@
 @import "variables";
 @import "mixins";
+@import "common";
+@import "work-section";
 
-body, section, h1, h2, h3, h4, h5, h6, div, p {
+body, section, h1, h2, h3, h4, h5, h6, div, p, a {
     margin: 0px;
     padding: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
     @include border-box-sizing;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.1;
 }
@@ -23,6 +30,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     .top-section, .bottom-section {
         height: 50vh;
+    }
+    .top-section {
+        @include display-flex;
+        align-items: center;
+        justify-content: center;
     }
     .bottom-section {
         background-color: $blue-font-color;

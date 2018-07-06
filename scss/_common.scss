@@ -1,0 +1,8 @@
+.page-section {
+    &-heading {
+        &-title {
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+    }
+}

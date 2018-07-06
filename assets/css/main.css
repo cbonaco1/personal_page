@@ -1,14 +1,62 @@
-body, section, h1, h2, h3, h4, h5, h6, div, p {
+.page-section-heading-title {
+  text-transform: capitalize;
+  font-size: 24px; }
+
+#work.page-section .page-section-heading {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+#work.page-section .work-experience {
+  padding-top: 40px; }
+  #work.page-section .work-experience:first-child {
+    padding-top: 0px; }
+  #work.page-section .work-experience-title .logos {
+    width: 50%; }
+  #work.page-section .work-experience-description {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px; }
+
+@media screen and (min-width: 1024px) {
+  #work.page-section:after {
+    clear: both;
+    content: "";
+    display: block; }
+  #work.page-section .page-section-heading {
+    width: 40%;
+    height: 100%;
+    float: left; }
+  #work.page-section .page-section-content {
+    width: 60%;
+    float: left; }
+    #work.page-section .page-section-content .work-experience {
+      padding-top: 0px;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 100%); }
+      #work.page-section .page-section-content .work-experience-title {
+        padding: 30px 0px; }
+      #work.page-section .page-section-content .work-experience-description {
+        padding: 0px 30px;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center; } }
+
+body, section, h1, h2, h3, h4, h5, h6, div, p, a {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1; }
 
@@ -19,6 +67,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
   #about.page-section .top-section, #about.page-section .bottom-section {
     height: 50vh; }
+  #about.page-section .top-section {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center; }
   #about.page-section .bottom-section {
     background-color: #2c3e50;
     color: #fff;
