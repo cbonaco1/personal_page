@@ -65,12 +65,16 @@
 @media screen and (min-width: 1024px) {
     #portfolio {
         &.page-section {
+            margin-bottom: 150px;
             .page-section-content {
                 @include display-flex;
                 align-items: flex-start;
                 justify-content: space-between;
                 .portfolio-experience {
                     width: 33.333333%;
+                    &-description {
+                        padding-bottom: 0px;
+                    }
                 }
             }
         }

@@ -1,0 +1,52 @@
+#education {
+    &.page-section {
+        .page-section-content {
+            &-heading {
+                margin-bottom: 20px;
+            }
+            .education-experience {
+                margin-bottom: 50px;
+                &:last-child {
+                    margin-bottom: 0px;
+                    margin-top: 50px;
+                }
+                .education-logo-container {
+                    width: 30%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #education {
+        &.page-section {
+            .page-section-content {
+                @include display-flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+                &-heading {
+                    width: 20%;
+                    margin-bottom: 0px;
+                    background-color: $blue-font-color;
+                    color: $white;
+                    padding-top: 40px;
+                }
+                .education-experience {
+                    width: 40%;
+                    padding: 0px 20px;
+                    margin-bottom: 0px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                    }
+                }
+                .education-experience-separator {
+                    display: none;
+                }
+            }
+        }
+    }
+}
