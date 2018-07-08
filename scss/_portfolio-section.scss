@@ -1,0 +1,78 @@
+#portfolio {
+    &.page-section {
+        .page-section-heading {
+            padding-top: 100px;
+            padding-bottom: 10px;
+        }
+        .page-section-content {
+            .portfolio-experience {
+                &-title {
+                    width: 100%;
+                    height: 200px;
+                    overflow: hidden;
+                    position: relative;
+                    display: block;
+                    &-background {
+                        width: 100%;
+                        height: 100%;
+                        transition: transform 0.5s;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: $blue-font-color;
+                    }
+                    &:hover, &:focus {
+                        .portfolio-experience-title-background {
+                            transform: scale(1.2);
+                        }
+                    }
+                    &-text {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        margin: auto;
+                        text-align: center;
+                        height: 50px;
+                        font-size: 24px;
+                        color: $white;
+                    }
+                }
+                &#long-island-aba {
+                    .portfolio-experience-title-background {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/kids_waving.jpg');
+                    }
+                }
+                &#kombert-caterers {
+                    .portfolio-experience-title-background {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/kombert_fork_impression.jpg');
+                    }
+                }
+                &#barbershop-scheduler {
+                    .portfolio-experience-title-background {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/barbershop.jpg');
+                    }
+                }
+                &-description {
+                    padding: 10px $mobile-left-right-padding 60px $mobile-left-right-padding;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #portfolio {
+        &.page-section {
+            .page-section-content {
+                @include display-flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                .portfolio-experience {
+                    width: 33.333333%;
+                }
+            }
+        }
+    }
+}
