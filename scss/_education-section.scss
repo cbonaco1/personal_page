@@ -1,5 +1,6 @@
 #education {
     &.page-section {
+        margin-bottom: 100px;
         .page-section-content {
             &-heading {
                 margin-bottom: 20px;
@@ -22,6 +23,7 @@
 @media screen and (min-width: 1024px) {
     #education {
         &.page-section {
+            margin-bottom: 150px;
             .page-section-content {
                 @include display-flex;
                 flex-direction: row;
