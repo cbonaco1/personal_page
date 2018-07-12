@@ -1,0 +1,16 @@
+#skills {
+    &.page-section {
+        .page-section-content {
+            background-color: $blue-font-color;
+            color: $white;
+            .skill {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &-info {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}

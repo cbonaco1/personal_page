@@ -141,6 +141,16 @@
       #education.page-section .page-section-content .education-experience-separator {
         display: none; } }
 
+#skills.page-section .page-section-content {
+  background-color: #2c3e50;
+  color: #fff; }
+  #skills.page-section .page-section-content .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #skills.page-section .page-section-content .skill-info {
+      width: 75%; }
+
 body, section, h1, h2, h3, h4, h5, h6, div, p, a {
   margin: 0px;
   padding: 0px;
