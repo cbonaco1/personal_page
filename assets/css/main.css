@@ -151,6 +151,36 @@
     #skills.page-section .page-section-content .skill-info {
       width: 75%; }
 
+#contact.page-section {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 70px; }
+  #contact.page-section .page-section-heading {
+    margin-bottom: 30px; }
+  #contact.page-section .page-section-content .contact-info {
+    margin-bottom: 30px; }
+    #contact.page-section .page-section-content .contact-info:last-child {
+      margin-bottom: 0px; }
+    #contact.page-section .page-section-content .contact-info-title {
+      padding-bottom: 10px; }
+  #contact.page-section .page-section-content .social-links {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-start; }
+    #contact.page-section .page-section-content .social-links .social-link {
+      margin-right: 30px; }
+      #contact.page-section .page-section-content .social-links .social-link:last-child {
+        margin-right: 0px; }
+
+@media screen and (min-width: 1024px) {
+  #contact.page-section {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    #contact.page-section .page-section-content .social-links {
+      justify-content: center; } }
+
 body, section, h1, h2, h3, h4, h5, h6, div, p, a {
   margin: 0px;
   padding: 0px;
@@ -168,6 +198,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.1; }
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
 
 hr {
   margin: 0px; }

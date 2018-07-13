@@ -1,0 +1,47 @@
+#contact {
+    &.page-section {
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        .page-section-heading {
+            margin-bottom: 30px;
+        }
+        .page-section-content {
+            .contact-info {
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                &-title {
+                    padding-bottom: 10px;
+                }
+            }
+            .social-links {
+                @include display-flex;
+                align-items: center;
+                justify-content: flex-start;
+                .social-link {
+                    margin-right: 30px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #contact {
+        &.page-section {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .page-section-content {
+                .social-links {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
