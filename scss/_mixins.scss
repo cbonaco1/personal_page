@@ -9,3 +9,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}

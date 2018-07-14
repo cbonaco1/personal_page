@@ -6,3 +6,21 @@
         }
     }
 }
+
+.card {
+    background-color: $white;
+    border: 1px solid $white;
+    @include border-radius(20px);
+    overflow: hidden;
+    &-title {
+        background-color: $white;
+        color: $blue-font-color;
+        padding-top: 30px;
+
+    }
+    &-description {
+        background-color: $white;
+        color: $blue-font-color;
+        padding: 30px;
+    }
+}
