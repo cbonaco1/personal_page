@@ -10,14 +10,6 @@
             padding-bottom: 10px;
             background-color: $blue-font-color;
             .work-experience {
-                &.card {
-                    margin-bottom: 50px;
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    &:last-child {
-                        margin-bottom: 0px;
-                    }
-                }
                 &-title {
                     .logos {
                         width: 50%;
@@ -26,23 +18,6 @@
                 }
                 &-description {
                     padding: 30px;
-                }
-            }
-        }
-    }
-}
-
-// Anything greater than mobile phone
-@media screen and (min-width: 600px) {
-    #work {
-        &.page-section {
-            .page-section-content {
-                .work-experience {
-                    &.card {
-                        margin-left: auto;
-                        margin-right: auto;
-                        width: 60%;
-                    }
                 }
             }
         }

@@ -7,20 +7,72 @@
     }
 }
 
-.card {
-    background-color: $white;
-    border: 1px solid $white;
-    @include border-radius(20px);
-    overflow: hidden;
-    &-title {
+.card-container {
+    .card {
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
         background-color: $white;
-        color: $blue-font-color;
-        padding-top: 30px;
+        border: 1px solid $white;
+        @include border-radius(20px);
+        overflow: hidden;
+        &-title {
+            background-color: $white;
+            color: $blue-font-color;
+            padding-top: 30px;
 
+        }
+        &-description {
+            background-color: $white;
+            color: $blue-font-color;
+            padding: 30px;
+        }
+        &.has-logo {
+            .card-description {
+                // increase the top padding of a card with a logo
+                padding-top: 60px;
+            }
+        }
+        &-logo {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            height: 100px;
+            width: 100px;
+            // setting negative margin-left here centers
+            // an element that is 100px wide
+            // If other logo has different width, this should be overriden
+            // to be half the elements width
+            margin-left: -50px;
+            padding: 10px;
+            background-color: $white;
+            border: 1px solid red;
+            &.circle {
+                border: 1px solid transparent;
+                border-radius: 50%;
+            }
+            &-image {
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
     }
-    &-description {
-        background-color: $white;
-        color: $blue-font-color;
-        padding: 30px;
+}
+
+// Anything greater than mobile phone
+@media screen and (min-width: 600px) {
+    .card-container {
+        .card {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
     }
 }
