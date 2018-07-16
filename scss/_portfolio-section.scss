@@ -1,6 +1,5 @@
 #portfolio {
     &.page-section {
-        margin-bottom: 100px;
         .page-section-heading {
             padding-bottom: 10px;
         }
@@ -94,7 +93,6 @@
 @media screen and (min-width: 1024px) {
     #portfolio {
         &.page-section {
-            margin-bottom: 150px;
             .page-section-content {
                 padding: 40px 80px;
                 @include display-flex;
