@@ -158,31 +158,61 @@
       #portfolio.page-section .page-section-content.card-container .portfolio-experience.card-description {
         border-right: 1px solid #ccc; } }
 
-#education.page-section {
-  padding-top: 50px;
-  margin-bottom: 100px; }
-  #education.page-section .page-section-content-heading {
-    margin-bottom: 10px; }
+#education.page-section .page-section-content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+  background-color: #2c3e50; }
+  #education.page-section .page-section-content .page-section-heading {
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    width: 75%;
+    color: #fff;
+    padding: 10px 5px;
+    margin-bottom: 30px; }
   #education.page-section .page-section-content .education-experience {
-    margin-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px; }
+    position: relative; }
     #education.page-section .page-section-content .education-experience:last-child {
-      margin-bottom: 0px;
-      margin-top: 50px; }
+      padding-top: 50px; }
     #education.page-section .page-section-content .education-experience-place {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px; }
+      flex-direction: column; }
       #education.page-section .page-section-content .education-experience-place-logo-container {
-        width: 30%;
-        padding-right: 20px; }
+        width: 30%; }
+    #education.page-section .page-section-content .education-experience-description {
+      display: none; }
+    #education.page-section .page-section-content .education-experience#app-academy {
+      text-align: left;
+      padding-left: 20px; }
+      #education.page-section .page-section-content .education-experience#app-academy .education-experience-description {
+        width: 50%;
+        position: relative; }
+    #education.page-section .page-section-content .education-experience#binghamton-university {
+      position: static;
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: right;
+      padding-right: 20px;
+      padding-bottom: 30px; }
+      #education.page-section .page-section-content .education-experience#binghamton-university .education-experience-place {
+        align-items: flex-end; }
+    #education.page-section .page-section-content .education-experience-separator {
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: #fff;
+      transform: skewY(-56deg);
+      transform-origin: top left; }
 
 @media screen and (min-width: 1024px) {
   #education.page-section {
     padding-top: 0px;
-    margin-bottom: 150px; }
+    margin-bottom: 0px; }
     #education.page-section .page-section-content {
       display: flex;
       display: -webkit-flex;
@@ -201,9 +231,11 @@
         margin-bottom: 0px; }
         #education.page-section .page-section-content .education-experience:last-child {
           margin-bottom: 0px;
-          margin-top: 0px; }
-      #education.page-section .page-section-content .education-experience-separator {
-        display: none; } }
+          margin-top: 0px; } }
+
+#skills.page-section .page-section-heading {
+  background-color: #fff;
+  color: #2c3e50; }
 
 #skills.page-section .page-section-content {
   background-color: #2c3e50;
@@ -215,27 +247,46 @@
     #skills.page-section .page-section-content .skill-info {
       width: 75%; }
 
-#contact.page-section {
-  text-align: left;
-  padding-top: 20px;
-  padding-bottom: 70px; }
-  #contact.page-section .page-section-heading {
-    margin-bottom: 30px; }
-  #contact.page-section .page-section-content .contact-info {
-    margin-bottom: 30px; }
-    #contact.page-section .page-section-content .contact-info:last-child {
-      margin-bottom: 0px; }
-    #contact.page-section .page-section-content .contact-info-title {
-      padding-bottom: 10px; }
-  #contact.page-section .page-section-content .social-links {
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: flex-start; }
-    #contact.page-section .page-section-content .social-links .social-link {
-      margin-right: 30px; }
-      #contact.page-section .page-section-content .social-links .social-link:last-child {
-        margin-right: 0px; }
+@media screen and (min-width: 1024px) {
+  #skills.page-section .page-section-heading {
+    padding: 30px 50px 10px 50px;
+    background-color: #2c3e50;
+    color: #fff; }
+  #skills.page-section .page-section-content {
+    background-color: #fff;
+    color: #2c3e50; } }
+
+#contact {
+  background-image: url("../img/nyc_stock.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #contact.page-section {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 70px; }
+    #contact.page-section .page-section-heading {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding-bottom: 30px; }
+    #contact.page-section .page-section-content {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff; }
+      #contact.page-section .page-section-content .contact-info {
+        margin-bottom: 30px; }
+        #contact.page-section .page-section-content .contact-info:last-child {
+          margin-bottom: 0px; }
+        #contact.page-section .page-section-content .contact-info-title {
+          padding-bottom: 10px; }
+      #contact.page-section .page-section-content .social-links {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        justify-content: flex-start; }
+        #contact.page-section .page-section-content .social-links .social-link {
+          margin-right: 30px; }
+          #contact.page-section .page-section-content .social-links .social-link:last-child {
+            margin-right: 0px; }
 
 @media screen and (min-width: 1024px) {
   #contact.page-section {

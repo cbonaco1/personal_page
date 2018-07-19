@@ -1,28 +1,64 @@
 #education {
     &.page-section {
-        padding-top: 50px;
-        margin-bottom: 100px;
         .page-section-content {
-            &-heading {
-                margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+            padding-top: 30px;
+            background-color: $blue-font-color;
+            .page-section-heading {
+                position: relative;
+                background: rgba(0, 0, 0, 0.4);
+                display: inline-block;
+                width: 75%;
+                color: $white;
+                padding: 10px 5px;
+                margin-bottom: 30px;
             }
             .education-experience {
-                margin-bottom: 50px;
-                padding-left: 20px;
-                padding-right: 20px;
+                position: relative;
                 &:last-child {
-                    margin-bottom: 0px;
-                    margin-top: 50px;
+                    padding-top: 50px;
                 }
                 &-place {
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 20px;
+                    flex-direction: column;
                     &-logo-container {
                         width: 30%;
-                        padding-right: 20px;
                     }
+                }
+                &-description {
+                    display: none;
+                }
+                &#app-academy {
+                    text-align: left;
+                    padding-left: 20px;
+                    .education-experience-description {
+                        width: 50%;
+                        position: relative;
+                    }
+                }
+                &#binghamton-university {
+                    position: static;
+                    background-color: $blue-font-color;
+                    color: $white;
+                    text-align: right;
+                    padding-right: 20px;
+                    padding-bottom: 30px;
+                    .education-experience-place {
+                        align-items: flex-end;
+                    }
+                }
+                &-separator {
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    background-color: $white;
+                    transform: skewY(-56deg);
+                    transform-origin: top left;
                 }
             }
         }
@@ -33,7 +69,7 @@
     #education {
         &.page-section {
             padding-top: 0px;
-            margin-bottom: 150px;
+            margin-bottom: 0px;
             .page-section-content {
                 @include display-flex;
                 flex-direction: row;
@@ -54,9 +90,6 @@
                         margin-bottom: 0px;
                         margin-top: 0px;
                     }
-                }
-                .education-experience-separator {
-                    display: none;
                 }
             }
         }
