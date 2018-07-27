@@ -7,7 +7,8 @@
             background-color: $blue-font-color;
             .page-section-heading {
                 position: relative;
-                background: rgba(0, 0, 0, 0.4);
+                background: rgba(53, 75, 97, 0.9);
+                box-shadow: 2px 2px 2px $blue-font-color;
                 display: inline-block;
                 width: 75%;
                 color: $white;
@@ -75,12 +76,14 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: stretch;
-                &-heading {
+                padding-top: 0px;
+                .page-section-heading {
                     width: 20%;
                     margin-bottom: 0px;
-                    background-color: green;
-                    color: $white;
-                    padding-top: 40px;
+                    background-color: $white;
+                    box-shadow: none;
+                    color: $blue-font-color;
+                    padding: 10px 5px;
                 }
                 .education-experience {
                     width: 40%;
@@ -90,6 +93,14 @@
                         margin-bottom: 0px;
                         margin-top: 0px;
                     }
+                    &#binghamton-university {
+                        padding-right: 80px;
+                    }
+                }
+                .education-experience-separator {
+                    height: 150%;
+                    transform: skewY(-32deg);
+                    left: 20%;
                 }
             }
         }
