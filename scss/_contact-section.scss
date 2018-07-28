@@ -1,12 +1,14 @@
 #contact {
     &.page-section {
+        height: 500px;
+        background-image: url('../img/nyc_stock.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         text-align: left;
-        padding-top: 20px;
-        padding-bottom: 70px;
-        .page-section-heading {
-            margin-bottom: 30px;
-        }
         .page-section-content {
+            color: $white;
+            padding: 40px 30px 0px 30px;
             .contact-info {
                 margin-bottom: 30px;
                 &:last-child {
@@ -14,6 +16,9 @@
                 }
                 &-title {
                     padding-bottom: 10px;
+                }
+                a {
+                    color: $white;
                 }
             }
             .social-links {
@@ -34,6 +39,9 @@
 @media screen and (min-width: 1024px) {
     #contact {
         &.page-section {
+            @include display-flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             padding-top: 30px;
             padding-bottom: 30px;
