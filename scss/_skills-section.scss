@@ -1,14 +1,63 @@
 #skills {
     &.page-section {
+        background-color: $blue-font-color;
+        .page-section-heading {
+            padding: 75px 15px 130px 15px;
+            background-color: $white;
+            color: $blue-font-color;
+        }
         .page-section-content {
             background-color: $blue-font-color;
-            color: $white;
-            .skill {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                &-info {
-                    width: 75%;
+            padding: 10px 30px 50px 30px;
+            .skills-grid {
+                margin-top: -110px;
+                background-color: $white;
+                color: $blue-font-color;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), -2px -2px 2px rgba(0, 0, 0, 0.4);
+                border-radius: 10px;
+                .skill {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &-info {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #skills {
+        &.page-section {
+            padding-top: 200px;
+            position: relative;
+            text-align: left;
+            .page-section-heading {
+                padding: 0px 50px;
+                background-color: $blue-font-color;
+                color: $white;
+                .skills-description {
+                    width: 50%;
+                    height: 200px;
+                    padding-right: 50px;
+                }
+            }
+            .page-section-content {
+                background-color: $white;
+                color: $blue-font-color;
+                height: 220px;
+                padding: 0px;
+                .skills-grid {
+                    position: absolute;
+                    top: 200px;
+                    right: 2%;
+                    margin-top: 0px;
+                    width: 48%;
+                    .skill {
+                        text-align: center;
+                    }
                 }
             }
         }
