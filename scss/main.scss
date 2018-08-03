@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
+@import "header";
 @import "common";
+@import "about";
 @import "work-section";
 @import "portfolio-section";
 @import "education-section";
@@ -27,6 +29,15 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
 }
 
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
 ul {
     list-style-type: none;
     margin: 0px;
@@ -41,57 +52,8 @@ hr {
     text-align: center;
 }
 
-#about.page-section {
-    position: relative;
-    .top-section, .bottom-section {
-        height: 50vh;
-    }
-    .top-section {
-        @include display-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .bottom-section {
-        background-color: $blue-font-color;
-        color: $white;
-        padding-top: 30px;
-    }
-    .middle-icon {
-        display: none;
-
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: red;
-    }
-    .down-arrow {
-        position: absolute;
-        bottom: 20px;
-        color: $white;
-    }
-}
-
 .my-picture {
   border-radius: 50%;
   height: 200px;
   width: 200px;
-}
-
-@media screen and (min-width: $min-mobile-width) {
-    #about.page-section {
-        @include display-flex;
-        .top-section, .bottom-section {
-            height: 100vh;
-            width: 50%;
-            @include display-flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .bottom-section {
-            padding: 0px 40px;
-        }
-        .down-arrow {
-            right: 25%;
-        }
-    }
 }

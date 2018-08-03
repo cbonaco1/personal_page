@@ -23,7 +23,6 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-    <script src="assets/js/app.js"></script>
 
     <!-- Google Analytics Script -->
     <script>
@@ -39,27 +38,43 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#nav">
-	<!-- <div id="section-topbar">
-		<div id="topbar-inner">
-			<div class="container">
-				<div class="row">
-					<div class="dropdown">
-						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About">ABOUT</a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#work" title="Works">WORK</a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#portfolio" title="Portfolio">PORTFOLIO</a></li>
-                            <li class="menu-item"><a class="smoothScroll mobile-bottom" href="#skills" title="Skills">SKILLS</a></li>
-							<li class="menu-item"><a class="smoothScroll mobile-bottom" href="#contact" title="Contact">CONTACT</a></li>
-                            <li class="menu-item"><a class="smoothScroll mobile-bottom" href="./assets/docs/ChristianBonacoreResume.pdf" title="Resume" target="_blank">RESUME</a></li>
-						</ul>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-
-			<div class="clear"></div>
-		</div>
-	</div> -->
+    <div id="header">
+        <div id="nav-bar">
+            <div id="hamburger-icon">X</div>
+        </div>
+        <ul id="nav-menu" class="close">
+            <li class="nav-menu-item">
+                <a href="#work" class="nav-menu-item-link">
+                    <i class="nav-menu-item-link-icon icon-briefcase" aria-hidden="true"></i>
+                    <p class="nav-menu-item-link-name">work</p>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#portfolio" class="nav-menu-item-link">
+                    <i class="nav-menu-item-link-icon icon-briefcase" aria-hidden="true"></i>
+                    <p class="nav-menu-item-link-name">portfolio</p>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#education" class="nav-menu-item-link">
+                    <i class="nav-menu-item-link-icon icon-briefcase" aria-hidden="true"></i>
+                    <p class="nav-menu-item-link-name">education</p>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#skills" class="nav-menu-item-link">
+                    <i class="nav-menu-item-link-icon icon-briefcase" aria-hidden="true"></i>
+                    <p class="nav-menu-item-link-name">skills</p>
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#contact" class="nav-menu-item-link">
+                    <i class="nav-menu-item-link-icon icon-briefcase" aria-hidden="true"></i>
+                    <p class="nav-menu-item-link-name">contact</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <section id="about" class="page-section" name="about">
         <div class="top-section">
@@ -69,7 +84,6 @@
                 <img class="my-picture" src="./assets/img/christian-bonacore.jpg" />
             </div>
         </div>
-        <div class="middle-icon"></div>
         <div class="bottom-section">
             <p>I am a NYC-based software engineer passionate about building products that help people.
             I take pride in putting great detail into my work, and focusing on giving the user the best experience possible.
@@ -339,9 +353,7 @@
       </div>
     </section>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>

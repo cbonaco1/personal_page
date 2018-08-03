@@ -1,0 +1,75 @@
+#header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    top: 60%;
+    margin-top: -40px;
+    #nav-bar {
+        display: none;
+        background-color: $white;
+    }
+    #nav-menu {
+        @include display-flex;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+        margin: 0 auto;
+        height: 100%;
+        background-color: $white;
+        border-radius: 10px;
+        border: 1px solid black;
+        color: $blue-font-color;
+        .nav-menu-item {
+            width: 20%;
+            text-align: center;
+            .icon {
+                display: block;
+            }
+        }
+    }
+    // .fixed class is added after the user scrolls down
+    &.fixed {
+        position: fixed;
+        top: 0px;
+        height: 50px;
+        margin-top: 0px;
+        #nav-bar {
+            display: block;
+        }
+        #nav-menu {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            margin: 0;
+            border-top: 0px;
+            border-right: 0px;
+            border-radius: 0px;
+            flex-direction: column;
+            transition: right 0.3s;
+            .nav-menu-item {
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                &-link {
+                    @include display-flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-icon {
+                        order: 2;
+                        padding-right: 20px;
+                    }
+                    &-name {
+                        padding-left: 20px;
+                    }
+                }
+            }
+            &.open {
+                right: 0px
+            }
+            &.close {
+                right: -210px
+            }
+        }
+    }
+}

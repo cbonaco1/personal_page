@@ -1,28 +1,36 @@
 $(document).ready(function(){
 
-    var currentScoll = 0;
+    var viewportHeight = window.innerHeight;
+    // Height of the top section (on mobile) is 60vh
+    // Height of the menu in the middle is 80px
+    // We want to set the menu to be fixed after the scroll position
+    // is greater than 60% of the viewport height, minus half the height of the menu
+    var fixedHeaderHeight = (viewportHeight * .60) - 40;
+    var header = $("#header");
     $(window).scroll(function() {
-        var win = window,
-            doc = document,
-            newScroll = win.scrollY,
-            topBarStyles = doc.getElementById("section-topbar").style;
+        var doc = document,
+            scrollPosition = doc.body.scrollTop || doc.documentElement.scrollTop;
 
-        // If current scroll position is greater than currentScoll,
-        // then user is scrolling down, so hide the nav bar
-        if (newScroll > currentScoll) {
-            topBarStyles.opacity = "0";
-            topBarStyles.visibility = "hidden";
+        // Height of the top section on mobile is 60% of the vertical height
+        // Want to detect when
+        if (scrollPosition >= fixedHeaderHeight) {
+            header.addClass("fixed");
+        } else {
+            header.removeClass("fixed");
+            $("#nav-menu").removeClass("open");
+            $("#nav-menu").addClass("close");
         }
-        // If less than currentScoll, then scrolling up
-        else {
-            topBarStyles.opacity = "1";
-            topBarStyles.visibility = "visible";
+    });
+
+    $("#nav-bar #hamburger-icon").on('click', function(event) {
+        var menu = $("#nav-menu");
+        if (menu.hasClass("open")) {
+            menu.removeClass("open");
+            menu.addClass("close");
+        } else {
+            menu.removeClass("close");
+            menu.addClass("open");
         }
-
-        // Update currentScoll regardless so next scroll
-        // has current scroll position to compare to
-        currentScoll = newScroll;
-
     });
 
     //Display description of a GOLD rotation when
