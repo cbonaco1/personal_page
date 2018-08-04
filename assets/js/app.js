@@ -7,6 +7,8 @@ $(document).ready(function(){
     // is greater than 60% of the viewport height, minus half the height of the menu
     var fixedHeaderHeight = (viewportHeight * .60) - 40;
     var header = $("#header");
+    var navigationMenu = $("#nav-menu");
+    var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
     $(window).scroll(function() {
         var doc = document,
             scrollPosition = doc.body.scrollTop || doc.documentElement.scrollTop;
@@ -17,20 +19,56 @@ $(document).ready(function(){
             header.addClass("fixed");
         } else {
             header.removeClass("fixed");
-            $("#nav-menu").removeClass("open");
-            $("#nav-menu").addClass("close");
+            navigationMenu.removeClass("open");
+            navigationMenu.addClass("close");
         }
     });
 
     $("#nav-bar #hamburger-icon").on('click', function(event) {
-        var menu = $("#nav-menu");
-        if (menu.hasClass("open")) {
-            menu.removeClass("open");
-            menu.addClass("close");
+        if (navigationMenu.hasClass("open")) {
+            navigationMenu.removeClass("open");
+            navigationMenu.addClass("close");
         } else {
-            menu.removeClass("close");
-            menu.addClass("open");
+            navigationMenu.removeClass("close");
+            navigationMenu.addClass("open");
         }
+    });
+
+    $(".nav-menu-item-link").on('click', function(event) {
+        var goToSection = event.currentTarget.dataset.section;
+        var section = document.getElementById(goToSection);
+        var verticalPosition = $(section).offset().top;
+        event.preventDefault();
+        var options = {
+            behavior: 'smooth',
+            top: verticalPosition,
+            left: 0
+        };
+
+        if (navigationMenu.hasClass('open')) {
+            // Wait until the menu finishes closing,
+            // then scroll to the page section
+            navigationMenu.one('transitionend', function() {
+                if (isSmoothScrollSupported) {
+                    window.scrollTo(options);
+                } else {
+                    window.scrollTo(options.left, options.top);
+                }
+                // NOTE need to set focus for accessibility purposes
+                // $(section).focus();
+            });
+        } else {
+            if (isSmoothScrollSupported) {
+                window.scrollTo(options);
+            } else {
+                window.scrollTo(options.left, options.top);
+            }
+            // NOTE need to set focus for accessibility purposes
+            // $(section).focus();
+        }
+
+        navigationMenu.removeClass("open");
+        navigationMenu.addClass("close");
     });
 
     //Display description of a GOLD rotation when

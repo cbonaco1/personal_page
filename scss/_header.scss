@@ -29,6 +29,8 @@
         }
     }
     // .fixed class is added after the user scrolls down
+    // This hides the menu that the user initially saw in the middle,
+    // and makes that the hamburger menu which slides in and out
     &.fixed {
         position: fixed;
         top: 0px;
