@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    var doc = document;
     var viewportHeight = window.innerHeight;
     // Height of the top section (on mobile) is 60vh
     // Height of the menu in the middle is 80px
@@ -9,6 +10,7 @@ $(document).ready(function(){
     var header = $("#header");
     var navigationMenu = $("#nav-menu");
     var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
+    var scrollPosition = doc.body.scrollTop || doc.documentElement.scrollTop;
     $(window).scroll(function() {
         var doc = document,
             scrollPosition = doc.body.scrollTop || doc.documentElement.scrollTop;
@@ -23,6 +25,10 @@ $(document).ready(function(){
             navigationMenu.addClass("close");
         }
     });
+
+    if (scrollPosition >= fixedHeaderHeight) {
+        header.addClass("fixed");
+    }
 
     $("#nav-bar #hamburger-icon").on('click', function(event) {
         if (navigationMenu.hasClass("open")) {

@@ -8,6 +8,20 @@
     #nav-bar {
         display: none;
         background-color: $white;
+        .nav-bar-left {
+            @include display-flex;
+            align-items: center;
+            .nav-bar-image {
+                display: inline-block;
+                height: 45px;
+                width: 45px;
+                background-image: url('../img/christian-bonacore.jpg');
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+        }
     }
     #nav-menu {
         @include display-flex;
@@ -36,8 +50,18 @@
         top: 0px;
         height: 50px;
         margin-top: 0px;
+        border-bottom: 1px solid black;
         #nav-bar {
-            display: block;
+            @include display-flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            .nav-bar-left {
+                margin-left: 10px;
+            }
+            #hamburger-icon {
+                margin-right: 10px;
+            }
         }
         #nav-menu {
             position: absolute;
@@ -71,6 +95,74 @@
             }
             &.close {
                 right: -210px
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #header {
+        max-width: 300px;
+        height: auto;
+        top: 50%;
+        margin-top: -150px;
+        left: 50%;
+        margin-left: -150px;
+        #nav-menu {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            .nav-menu-item {
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                &-link {
+                    @include display-flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-icon {
+                        order: 2;
+                        padding-right: 20px;
+                    }
+                    &-name {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+        &.fixed {
+            width: 100%;
+            left: 0;
+            max-width: none;
+            @include display-flex;
+            justify-content: space-between;
+            margin-left: 0px;
+            background-color: $white;
+            #nav-bar {
+                position: relative;
+                .nav-bar-left {
+                    margin-left: 0px;
+                    .nav-bar-image {
+                        position: absolute;
+                        height: 75px;
+                        width: 75px;
+                        top: 10px;
+                        left: 5px;
+                    }
+                    .nav-bar-name {
+                        margin-left: 95px;
+                    }
+                }
+                #hamburger-icon {
+                    display: none;
+                }
+            }
+            #nav-menu {
+                flex-direction: row;
+                position: static;
+                width: auto;
+                border: none;
+                background-color: none;
             }
         }
     }
