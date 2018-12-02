@@ -11,6 +11,29 @@ $(document).ready(function(){
     var navigationMenu = $("#nav-menu");
     var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
     var scrollPosition = doc.body.scrollTop || doc.documentElement.scrollTop;
+    var windowHeight = $(window).height();
+
+    $.fn.isInViewPort = function(callback, offset) {
+        if (typeof offset === "undefined") {
+            offset = 0;
+        }
+        // Top position of element
+        var elementTop = this.offset().top + offset;
+        // Bottom position of element
+        var elementBottom = elementTop + this.outerHeight();
+
+        // Scrollbar position
+        // When at top of page, this is 0
+        var viewportTop = $(window).scrollTop();
+        // Scroll position of bottom of viewport
+        // When at top of page, this is the same as window.height
+        var viewportBottom = viewportTop + windowHeight;
+
+        if (elementBottom > viewportTop && elementTop < viewportBottom) {
+            callback();
+        }
+    }
+
     $(window).scroll(function() {
         var doc = document,
             scrollPosition = doc.body.scrollTop || doc.documentElement.scrollTop;
@@ -24,6 +47,15 @@ $(document).ready(function(){
             navigationMenu.removeClass("open");
             navigationMenu.addClass("close");
         }
+
+        // Check if any of the work-experience cards are in focus,
+        // if they are, then add the grow class, which triggers an animation
+        $(".work-experience.card").each(function() {
+            var _this = $(this);
+            _this.isInViewPort(function() {
+                _this.addClass("grow");
+            }, 100);
+        });
     });
 
     if (scrollPosition >= fixedHeaderHeight) {
