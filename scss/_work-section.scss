@@ -38,6 +38,20 @@
     }
 }
 
+@media screen and (min-width: 600px) {
+    #work {
+        &.page-section {
+            .page-section-content {
+                .work-experience {
+                    &.card.grow {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1024px) {
     #work {
         &.page-section {

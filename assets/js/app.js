@@ -56,6 +56,13 @@ $(document).ready(function(){
                 _this.addClass("grow");
             }, 100);
         });
+
+        $(".portfolio-experience.card").each(function() {
+            var _this = $(this);
+            _this.isInViewPort(function() {
+                _this.addClass("active");
+            }, 200);
+        });
     });
 
     if (scrollPosition >= fixedHeaderHeight) {
