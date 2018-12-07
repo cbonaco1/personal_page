@@ -63,6 +63,20 @@ $(document).ready(function(){
                 _this.addClass("active");
             }, 200);
         });
+
+        $(".education-experience").each(function() {
+            var _this = $(this);
+            _this.isInViewPort(function() {
+                _this.addClass("active");
+            }, 200);
+        });
+
+        $(".skills-grid .skill").each(function() {
+            var _this = $(this);
+            _this.isInViewPort(function() {
+                _this.addClass("active");
+            }, 120);
+        });
     });
 
     if (scrollPosition >= fixedHeaderHeight) {

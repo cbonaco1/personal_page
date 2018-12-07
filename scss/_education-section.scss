@@ -17,6 +17,7 @@
             }
             .education-experience {
                 position: relative;
+                transition: transform 0.5s;
                 &:last-child {
                     padding-top: 50px;
                 }
@@ -33,6 +34,7 @@
                 &#app-academy {
                     text-align: left;
                     padding-left: 20px;
+                    transform: translateX(-400px);
                     .education-experience-description {
                         width: 50%;
                         position: relative;
@@ -45,6 +47,7 @@
                     text-align: right;
                     padding-right: 20px;
                     padding-bottom: 30px;
+                    transform: translateX(400px);
                     .education-experience-place {
                         align-items: flex-end;
                     }
@@ -60,6 +63,11 @@
                     background-color: $white;
                     transform: skewY(-56deg);
                     transform-origin: top left;
+                }
+                &.active {
+                    &#app-academy, &#binghamton-university {
+                        transform: translateX(0);
+                    }
                 }
             }
         }

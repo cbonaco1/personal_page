@@ -21,12 +21,15 @@
             color: $white;
             padding-top: 60px;
             .copy {
-                -webkit-animation-name: slowFadeIn;
-                -moz-animation-name: slowFadeIn;
-                animation-name: slowFadeIn;
+                opacity: 0;
+                -webkit-animation-name: fadeIn;
+                -moz-animation-name: fadeIn;
+                animation-name: fadeIn;
                 -webkit-animation-duration: 3s;
                 -moz-animation-duration: 3s;
                 animation-duration: 3s;
+                animation-delay: 0.75s;
+                animation-fill-mode: forwards;
             }
         }
         .down-arrow {
@@ -77,42 +80,6 @@
 }
 @keyframes fadeIn {
     0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1.0;
-    }
-}
-
-// keyframe animation for fadeIn triggered by a delay
-// opacity does not actually change until 25% of the animation is complete
-@-webkit-keyframes slowFadeIn {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1.0;
-    }
-}
-@-moz-keyframes slowFadeIn {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1.0;
-    }
-}
-@keyframes slowFadeIn {
-    0% {
-        opacity: 0;
-    }
-    25% {
         opacity: 0;
     }
     100% {
