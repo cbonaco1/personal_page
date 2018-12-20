@@ -3,6 +3,19 @@
         &-title {
             text-transform: capitalize;
             font-size: 24px;
+            &.with-icon {
+                @include display-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .page-section-heading-icon {
+                    font-size: 32px;
+                }
+            }
+        }
+        &-icon {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -72,6 +85,23 @@
             margin-left: auto;
             margin-right: auto;
             width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-section {
+        &-heading {
+            &-title {
+                &.with-icon {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin-bottom: 15px;
+                    .page-section-heading-icon {
+                        margin-left: 20px;
+                    }
+                }
+            }
         }
     }
 }

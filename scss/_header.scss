@@ -83,15 +83,22 @@
                     justify-content: space-between;
                     &-icon {
                         order: 2;
-                        padding-right: 20px;
                     }
                     &-name {
-                        padding-left: 20px;
+                        padding-right: 8px;
                     }
                 }
             }
             &.open {
-                right: 0px
+                right: 0px;
+                padding-left: 12px;
+                padding-right: 12px;
+                .nav-menu-item {
+                    border-bottom: 1px solid #ccc;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
             }
             &.close {
                 right: -210px
@@ -112,20 +119,22 @@
             flex-direction: column;
             height: auto;
             width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
             .nav-menu-item {
                 width: 100%;
                 padding-top: 20px;
                 padding-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                &:last-child {
+                    border-bottom: none;
+                }
                 &-link {
                     @include display-flex;
                     align-items: center;
                     justify-content: space-between;
                     &-icon {
                         order: 2;
-                        padding-right: 20px;
-                    }
-                    &-name {
-                        padding-left: 20px;
                     }
                 }
             }
@@ -162,7 +171,14 @@
                 position: static;
                 width: auto;
                 border: none;
-                background-color: none;
+                padding-left: 0px;
+                .nav-menu-item {
+                    margin-right: 40px;
+                    border-bottom: none;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
             }
         }
     }
