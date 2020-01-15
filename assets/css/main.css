@@ -242,6 +242,10 @@ a:after {
   height: 110px;
   width: 110px;
 }
+.logos.pager {
+   height: 60px;
+   width: 125px;
+}
 
 .skill-logo img {
   /*border:1px solid red;*/
