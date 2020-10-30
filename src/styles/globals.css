@@ -39,3 +39,7 @@ img {
 ul {
   list-style-type: none;
 }
+
+.page-section {
+  margin-bottom: 3rem;
+}
