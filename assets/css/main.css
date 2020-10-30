@@ -68,6 +68,9 @@ a:focus {
     color: #7b7b7b;
     text-decoration: none;
 }
+a.with-underline {
+  text-decoration: underline;
+}
 
 a:before,
 a:after {
