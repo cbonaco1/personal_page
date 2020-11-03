@@ -4,6 +4,7 @@ import Image from 'next/image'
 import About from 'sections/About'
 import Work from 'sections/Work'
 import Portfolio from 'sections/Portfolio'
+import Education from 'sections/Education'
 
 import styles from 'styles/Home.module.css'
 
@@ -30,6 +31,7 @@ export default function Home() {
         <About />
         <Work />
         <Portfolio />
+        <Education />
       </main>
 
       <footer className={styles.footer}>
