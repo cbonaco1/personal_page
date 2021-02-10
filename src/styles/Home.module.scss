@@ -1,5 +1,8 @@
+@import "variables";
+
 .me {
   border-radius: 50%;
+  border-color: $blue;
 }
 
 .container {

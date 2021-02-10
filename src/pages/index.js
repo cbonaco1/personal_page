@@ -6,7 +6,7 @@ import Work from 'sections/Work'
 import Portfolio from 'sections/Portfolio'
 import Education from 'sections/Education'
 
-import styles from 'styles/Home.module.css'
+import styles from 'styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <h1 className={styles.title}>Hi, I'm</h1>
         <h1 className={styles.title}>Christian Bonacore</h1>
         <p>Software Engineer</p>
         <Image

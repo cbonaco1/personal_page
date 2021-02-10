@@ -1,0 +1,26 @@
+.container {
+  flex-direction: column;
+}
+
+.titleLogo {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .pagerOffice {
+    order: 2;
+  }
+
+  .info {
+    order: 1;
+  }
+
+  .titleLogo {
+    flex-direction: row;
+    align-items: center;
+  }
+}

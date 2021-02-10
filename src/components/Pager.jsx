@@ -1,15 +1,35 @@
 import React from "react";
-import WorkListItem from "components/WorkListItem";
+import Image from "next/image";
+
+import styles from 'styles/Pager.module.scss'
 
 const Pager = () => {
   return (
-    <WorkListItem 
-      title={"Senior Software Engineer, Web"}
-      company={"Pager"}
-      description={"Pager provides a platform where patients are connected to appropriate health care, saving time and money by being navigated to only the care they need."}
-      logo={'/img/logos/pager.png'}
-      years={'2019 - present'}
-    />
+    <div className={`displayFlex ${styles.container}`}>
+      <div className={`${styles.pagerOffice}`}>
+        <Image 
+          src="/img/pager_office.png"
+          alt="Pager"
+          height={500}
+          width={400}
+        />
+      </div>
+      <div className={`${styles.info}`}>
+        <div className={`displayFlex ${styles.titleLogo}`}>
+          <h3>Pager</h3>
+          <div>
+            <Image
+              src="/img/logos/pager.png"
+              alt="Pager"
+              height={100}
+              width={100}
+            />
+          </div>
+        </div>
+        <h4>Senior Software Engineer, Web <i>March 2018 - present</i></h4>
+        <p>This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. You know what? It is beets. I've crashed into a beet truck. Just my luck, no ice. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
+      </div>
+    </div>
   )
 };
 
