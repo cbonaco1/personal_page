@@ -1,5 +1,6 @@
 .container {
   flex-direction: column;
+  margin-bottom: 48px;
 }
 
 .titleLogo {
@@ -13,6 +14,8 @@
 
   .pagerOffice {
     order: 2;
+    flex-shrink: 0;
+    flex-basis: 400; // width of picture
   }
 
   .info {
