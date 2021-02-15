@@ -25,7 +25,6 @@ const Work = () => {
         </p>
         <p>
           Below are some of the projects I have had the pleasure to work on.
-          Please <a href="/contact">contact me</a> if you would like to work together.
         </p>
       </div>
       <Portfolio />

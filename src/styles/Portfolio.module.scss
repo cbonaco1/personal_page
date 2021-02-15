@@ -1,0 +1,6 @@
+.listItem {
+  margin-bottom: 4rem;
+  &:last-child {
+    margin-bottom: 0rem;
+  }
+}
