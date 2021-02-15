@@ -1,0 +1,22 @@
+.container {
+  flex-direction: column;
+}
+
+.left {
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .left, .right {
+    width: 50%;
+  }
+
+  .left {
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+}

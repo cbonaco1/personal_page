@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import About from 'sections/About'
 import Work from 'sections/Work'
+import Skills from 'sections/Skills'
 import Education from 'sections/Education'
 
 import styles from 'styles/Home.module.scss'
@@ -30,6 +31,7 @@ export default function Home() {
         />
         <About />
         <Work />
+        <Skills />
         <Education />
       </main>
 

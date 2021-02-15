@@ -4,7 +4,7 @@ import Section from "./Section";
 const About = () => {
   return (
     <Section>
-      <h3>About</h3>
+      <h2>About</h2>
       <p>
         I am a NYC-based software engineer passionate about building products that help people. 
         I take pride in putting great detail into my work, and focusing on giving the user the best experience possible. 
