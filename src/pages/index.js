@@ -10,7 +10,7 @@ import styles from 'styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Christian Bonacore</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,16 +19,37 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Hi, I'm</h1>
-        <h1 className={styles.title}>Christian Bonacore</h1>
-        <p>Software Engineer</p>
-        <Image
-          src="/img/me.jpg"
-          alt="Christian Bonacore"
-          height={200}
-          width={200}
-          className={styles.me}
-        />
+        <div className="hero is-fullheight">
+          <div className="hero-body">
+            <div className="columns">
+              <div className="column">
+                <h1 className={styles.title}>
+                  Hi, I'm<br />
+                  Christian Bonacore
+                </h1>
+                <p>Software Engineer</p>
+                <p>
+                  Did he just throw my cat out of the window? 
+                  God help us, we're in the hands of engineers. 
+                  Just my luck, no ice. Hey, take a look at the earthlings. 
+                  Goodbye! Remind me to thank John for a lovely weekend. 
+                  Forget the fat lady! You're obsessed with the fat lady!
+                </p>
+                <div className="buttons are-medium">
+                  <button className="button is-primary">Contact Me</button>
+                  <button className="button">Learn About Me</button>
+                </div>
+              </div>
+              <div className="column">
+                <img
+                  src="/img/me.jpg"
+                  alt="Christian Bonacore"
+                  className={styles.me}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <About />
         <Work />
         <Skills />
