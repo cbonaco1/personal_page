@@ -1,5 +1,6 @@
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/layout/hero.sass";
+@import "bulma/sass/layout/section.sass";
 @import "bulma/sass/elements/container.sass";
 @import "bulma/sass/elements/button.sass";
 @import "bulma/sass/elements/title.sass";
@@ -47,12 +48,6 @@ img {
 
 ul {
   list-style-type: none;
-}
-
-.page-section {
-  margin: 0 auto 3rem auto;
-  max-width: 1024px;
-  border: 1px solid black;
 }
 
 .displayFlex {
