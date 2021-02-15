@@ -8,11 +8,11 @@ const Home = () => {
       <div className="hero-body">
         <div className="columns">
           <div className="column">
-            <h1 className={styles.title}>
-              Hi, I'm<br />
-              Christian Bonacore
+            <h1 className="title has-text-centered">
+              Hi,<br />
+              I'm Christian Bonacore
             </h1>
-            <p>Software Engineer</p>
+            <p className="subtitle has-text-centered">Software Engineer</p>
             <p>
               Did he just throw my cat out of the window? 
               God help us, we're in the hands of engineers. 
