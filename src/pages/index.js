@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 import Home from 'sections/Home'
-import About from 'sections/About'
 import Work from 'sections/Work'
 import Skills from 'sections/Skills'
 import Education from 'sections/Education'
@@ -17,7 +16,6 @@ export default function Index() {
       </Head>
       <main>
         <Home />
-        <About />
         <Work />
         <Skills />
         <Education />
