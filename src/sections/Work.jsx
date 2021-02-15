@@ -17,8 +17,8 @@ const Work = () => {
           While each client presents unique challenges, I focus on two main themes
         </p>
         <ul className={`${styles.phrase}`}>
-          <li><p>Beautiful design</p></li>
-          <li><p>Powerful engineering</p></li>
+          <li><p className="is-size-2 is-italic">Beautiful design</p></li>
+          <li><p className="is-size-2 is-italic">Powerful engineering</p></li>
         </ul>
         <p>
           I want your website to function like a sports car. Sleek design with an engine under the hood that flies
