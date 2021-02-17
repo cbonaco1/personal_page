@@ -10,8 +10,8 @@ const PortfolioItem = ({
   liveUrl
 }) => {
   return (
-    <div className={`displayFlex ${styles.project}`}>
-      <div className={`${styles.logoContainer}`}>
+    <div className={`columns is-mobile is-vcentered ${styles.columnsContainer}`}>
+      <div className={`column ${styles.logoContainer} is-narrow`}>
         <Image 
           src={logoImgSrc}
           width={200}
@@ -19,7 +19,7 @@ const PortfolioItem = ({
           alt={title}
         />
       </div>
-      <div className={`${styles.description}`}>
+      <div className="column">
         <h4>{title}</h4>
         {description}
         <p><a href={liveUrl} target="_blank">LIVE</a></p>

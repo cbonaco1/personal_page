@@ -23,7 +23,7 @@ const Pager = () => {
         <h4>Senior Software Engineer, Web{' '}<i>March 2018 - present</i></h4>
         <p>This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. You know what? It is beets. I've crashed into a beet truck. Just my luck, no ice. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
       </div>
-      <div className="column">
+      <div className="column is-narrow">
         <div>
           <Image 
             src="/img/pager_office.png"
