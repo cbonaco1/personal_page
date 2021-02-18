@@ -5,10 +5,14 @@ const Binghamton = () => {
   return (
     <EducationListItem 
       name="Binghamton University"
-      location="Bachelor's of Science - Computer Science"
-      description="Computer Science"
+      description={
+        <>
+          <p>Bachelor's of Science</p>
+          <p>Computer Science</p>
+        </>
+      }
       logo="/img/logos/binghamton.png"
-      year={2012}
+      year="2012"
     />
   )
 }

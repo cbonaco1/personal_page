@@ -7,9 +7,13 @@ const Education = () => {
   return (
     <Section>
       <h3>Education</h3>
-      <ul>
-        <AppAcademy />
-        <Binghamton />
+      <ul className="columns">
+        <li className="column">
+          <AppAcademy />
+        </li>
+        <li className="column">
+          <Binghamton />
+        </li>
       </ul>
     </Section>
   )
