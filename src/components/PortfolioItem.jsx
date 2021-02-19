@@ -10,7 +10,7 @@ const PortfolioItem = ({
   liveUrl
 }) => {
   return (
-    <div className={`columns is-mobile is-vcentered ${styles.columnsContainer}`}>
+    <div className="columns is-mobile is-vcentered">
       <div className={`column ${styles.logoContainer} is-narrow`}>
         <Image 
           src={logoImgSrc}

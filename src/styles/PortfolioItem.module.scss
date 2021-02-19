@@ -1,12 +1,4 @@
-.columnsContainer {
-  flex-direction: column;
-}
-
 @media screen and (min-width: 769px) {
-  .columnsContainer {
-    flex-direction: row;
-  }
-
   .logoContainer {
     order: 2;
     margin-left: 32px;
