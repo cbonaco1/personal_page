@@ -82,7 +82,13 @@ ul {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: $tablet) {
+  .columns.is-mobile {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $tablet) {
   .skills-section {
     .columns {
       .column:not(:last-child) {

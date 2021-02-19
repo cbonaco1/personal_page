@@ -1,0 +1,24 @@
+@import "./variables";
+
+.contact-section-wrapper {
+  background-color: $primary;
+  position: relative;
+  margin-top: 128px;
+  padding-bottom: 9rem;
+}
+
+.contact-section {
+  background-color: $white;
+  position: absolute;
+  top: -32px;
+  width: calc(100% - 3rem);
+  // sections have 1.5rem left/right padding
+}
+
+@media screen and (min-width: $desktop) {
+  .contact-section {
+    width: 960px;
+    left: 50%;
+    margin-left: -480px;
+  }
+}

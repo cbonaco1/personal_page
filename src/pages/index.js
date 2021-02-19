@@ -4,6 +4,7 @@ import Home from 'sections/Home'
 import Work from 'sections/Work'
 import Skills from 'sections/Skills'
 import Education from 'sections/Education'
+import Contact from 'sections/Contact'
 
 export default function Index() {
   return (
@@ -19,6 +20,7 @@ export default function Index() {
         <Work />
         <Skills />
         <Education />
+        <Contact />
       </main>
     </div>
   )

@@ -1,3 +1,5 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+// not sure if i need the tilda here
+
 $primary: #2c3e50;
-$white: #ffffff;
-$blue: #2c3e50;
+$blue: $primary;
