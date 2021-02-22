@@ -32,7 +32,7 @@ const Skills = () => {
           <li className="column box">
             <h5 className="is-capitalized">design</h5>
             <ul>
-              <li>Responsive & Mobile-Friendly Design</li>
+              <li>Responsive, mobile-friendly design</li>
               <li>Figma</li>
               <li>Border-line obsession with UI/UX</li>
               <li>Accessibility</li>

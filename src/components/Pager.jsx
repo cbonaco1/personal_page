@@ -20,7 +20,8 @@ const Pager = () => {
             />
           </div>
         </div>
-        <p>Senior Software Engineer, Web{' '}<i>March 2018 - present</i></p>
+        <p>Senior Software Engineer, Web</p>
+        <p><i>March 2018 - present</i></p>
         <p>This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. You know what? It is beets. I've crashed into a beet truck. Just my luck, no ice. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
       </div>
       <div className="column is-narrow">
