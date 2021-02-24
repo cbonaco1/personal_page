@@ -55,6 +55,13 @@
   }
 }
 
+.someImage {
+  height: 200px;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: $tablet) {
   .hero:before {
     height: 100%;
