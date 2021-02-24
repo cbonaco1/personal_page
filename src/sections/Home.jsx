@@ -4,10 +4,10 @@ import styles from 'styles/Home.module.scss'
 
 const Home = () => {
   return (
-    <div className="hero is-fullheight">
-      <div className="hero-body">
+    <div className={`hero is-fullheight ${styles.hero}`}>
+      <div className={`hero-body ${styles.heroBody}`}>
         <div className="container">
-          <div className="columns is-vcentered">
+          <div className="columns is-vcentered ic-centered is-mobile">
             <div className="column">
               <h1 className="title">
                 Hi,<br />
@@ -25,8 +25,7 @@ const Home = () => {
                 <button className="button is-rounded">Learn About Me</button>
               </div>
             </div>
-            <div className="column">
-              {/* TODO - use Next img here instead */}
+            <div className={`column ${styles.rightColumn}`}>
               <img
                 src="/img/me.jpg"
                 alt="Christian Bonacore"

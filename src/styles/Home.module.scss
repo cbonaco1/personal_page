@@ -1,11 +1,47 @@
 @import "variables";
 
 .me {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   display: block;
   margin: 0 auto;
+}
+
+.heroBody {
+  position: relative;
+}
+.heroBody:after,
+.heroBody:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: $white;
+}
+.heroBody:after {
+  bottom: 0;
+  left: 24px;
+  height: 120px;
+  width: 6px;
+}
+.heroBody:before {
+  right: 0px;
+  bottom: 120px;
+  width: 10%;
+  height: 6px;
+}
+
+.hero {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background-color: $primary;
+  }
 }
 
 .buttonGroup {
@@ -19,7 +55,24 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
+  .hero:before {
+    height: 100%;
+    width: 50%;
+  }
+  .heroBody:after {
+    right: 100px;
+    left: auto;
+    height: 20vh;
+    width: 6px;
+  }
+  .heroBody:before {
+    top: 0px;
+    right: 50px;
+    bottom: auto;
+    height: 20vh;
+    width: 6px;
+  }
   .buttonGroup {
     flex-direction: row;
     button {
