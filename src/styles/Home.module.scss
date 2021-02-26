@@ -7,41 +7,44 @@
   margin: 0 auto;
 }
 
-.heroBody {
-  position: relative;
+// overwrite bulma
+.heroColumns:last-child {
+  margin-bottom: 0;
 }
-.heroBody:after,
-.heroBody:before {
+
+.heroBody {
+  padding-bottom: 0;
+}
+
+.infoColumn {
+  margin-bottom: 4rem;
+  padding-bottom: 0;
+}
+
+.meColumn {
+  position: relative;
+  width: calc(100% + 1.5rem);
+  background-color: $primary-light-one;
+  padding: 4rem 0;
+}
+.meColumn:after,
+.meColumn:before {
   content: '';
   display: block;
   position: absolute;
   background-color: $white;
 }
-.heroBody:after {
+.meColumn:after {
   bottom: 0;
   left: 24px;
   height: 120px;
-  width: 6px;
+  width: 5px;
 }
-.heroBody:before {
+.meColumn:before {
   right: 0px;
   bottom: 120px;
   width: 10%;
-  height: 6px;
-}
-
-.hero {
-  position: relative;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50%;
-    width: 100%;
-    background-color: $primary;
-  }
+  height: 5px;
 }
 
 .buttonGroup {
@@ -63,22 +66,32 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .hero:before {
-    height: 100%;
-    width: 50%;
+  .heroBody {
+    padding-bottom: 3rem;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background-color: $primary;
+    }
   }
-  .heroBody:after {
-    right: 100px;
-    left: auto;
-    height: 20vh;
-    width: 6px;
+  .infoColumn {
+    margin-bottom: 0;
+    padding-bottom: 0.75rem;
   }
-  .heroBody:before {
-    top: 0px;
-    right: 50px;
-    bottom: auto;
-    height: 20vh;
-    width: 6px;
+  .meColumn {
+    background-color: transparent;
+    padding: 0.75rem;
+    z-index: 2;
+    &:before,
+    &:after {
+      display: none;
+    }
   }
   .buttonGroup {
     flex-direction: row;

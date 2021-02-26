@@ -5,17 +5,17 @@ import styles from 'styles/Home.module.scss'
 const Home = () => {
   return (
     <div>
-      <div className={`hero is-fullheight ${styles.hero}`}>
+      <div className={`hero is-fullheight`}>
         <div className={`hero-body ${styles.heroBody}`}>
           <div className="container">
-            <div className="columns is-vcentered ic-centered is-mobile">
-              <div className="column">
+            <div className={`columns is-vcentered ic-centered is-mobile ${styles.heroColumns}`}>
+              <div className={`column ${styles.infoColumn}`}>
                 <h1 className="title">
                   Hi,<br />
                   I'm Christian Bonacore
                 </h1>
-                <p className="subtitle">Software Engineer</p>
-                <p>
+                <p className="subtitle">Web Developer</p>
+                <p className="is-size-p">
                 I am a NYC-based software engineer passionate about building products that help people. 
                 I take pride in putting great detail into my work, and focusing on giving the user the best experience possible. 
                 Outside of coding, I enjoy quoting Seinfeld, a good cup of coffee, or quoting Seinfeld over a good cup of coffee.
@@ -26,7 +26,7 @@ const Home = () => {
                   <button className="button is-rounded">Learn About Me</button>
                 </div>
               </div>
-              <div className={`column ${styles.rightColumn}`}>
+              <div className={`column ${styles.meColumn}`}>
                 <img
                   src="/img/me.jpg"
                   alt="Christian Bonacore"
