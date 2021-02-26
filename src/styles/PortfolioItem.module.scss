@@ -1,4 +1,17 @@
-@media screen and (min-width: 769px) {
+@import './variables';
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin-bottom: 1.0rem;
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: $tablet) {
   .logoContainer {
     order: 2;
     margin-left: 32px;

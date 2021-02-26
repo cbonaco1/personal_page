@@ -1,6 +1,11 @@
-.listItem {
-  margin-bottom: 4rem;
-  &:last-child {
-    margin-bottom: 0rem;
+@import "./variables";
+
+.listItem:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: $tablet) {
+  .listItem:not(:last-child) {
+    margin-bottom: 10rem;
   }
 }

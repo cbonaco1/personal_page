@@ -20,9 +20,11 @@ const PortfolioItem = ({
         />
       </div>
       <div className="column">
-        <h4>{title}</h4>
-        {description}
-        <p><a href={liveUrl} target="_blank">LIVE</a></p>
+        <h4 className={`${styles.title}`}>{title}</h4>
+        <div className={`${styles.description}`}>
+          {description}
+        </div>
+        <p><a href={liveUrl} className="button is-primary is-uppercase" target="_blank">view website</a></p>
       </div>
     </div>
   )

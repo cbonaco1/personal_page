@@ -17,7 +17,7 @@ const Portfolio = () => {
                   Built a brand new, responsive website for Bill's water construction business. 
                   The site serves as a portfolio for the different work Bill and his team does. 
                   I also coordinated with a
-                  {' '}<a href="https://www.instagram.com/p/CGVGUetDr6f/?utm_source=ig_web_copy_link">freelance designer</a>{' '}
+                  {' '}<a href="https://www.instagram.com/p/CGVGUetDr6f" target="_blank">freelance designer</a>{' '}
                   on a new logo for Bill's business.            
                 </p>
                 <p>Add pics from shoot at Bill's with Sophia</p>
