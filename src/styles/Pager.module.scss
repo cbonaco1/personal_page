@@ -1,8 +1,31 @@
-.pager {
+@import './variables';
+
+.pager:not(:last-child) {
   padding-top: 2rem;
+  margin-bottom: 5.75rem;
 }
 
-@media screen and (min-width: 1024px) {
+.jobDescriptionColumn {
+  margin-bottom: 2.25rem;
+  padding-bottom: 0;
+}
+
+.jobTitle {
+  margin-bottom: 0.25rem;
+}
+
+.jobTime {
+  margin-bottom: 1.0rem;
+  line-height: 1;
+}
+
+@media screen and (min-width: $tablet) {
+  .jobDescriptionColumn {
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media screen and (min-width: $desktop) {
   .pager {
     padding-top: 3rem;
   }

@@ -11,20 +11,21 @@ const Work = () => {
       <h2>Work</h2>
       <Pager />
       <div className={`${styles.intro}`}>
-        <p>
+        <p className="is-size-5">
           In addition to my work as a professional software engineer, in my spare time I work as a freelancer, 
           designing and developing websites for small businesses. 
-          While each client presents unique challenges, I focus on two main themes
+          While each client presents unique challenges, I focus on two main themes:
         </p>
-        <ul className={`${styles.phrase}`}>
-          <li><p className="is-size-2 is-italic">Beautiful design</p></li>
-          <li><p className="is-size-2 is-italic">Powerful engineering</p></li>
-        </ul>
-        <p>
-          I want your website to function like a sports car. Sleek design with an engine under the hood that flies
+        <div className={`${styles.phrase}`}>
+          <p className="is-size-2">Beautiful design</p>
+          <p className="is-size-2">Powerful engineering</p>
+        </div>
+        <p className="is-size-5">
+          I want your website to function like a sports car. Sleek design with an engine under the hood that can go from 0-60mph in under 2 seconds.
         </p>
-        <p>
-          Below are some of the projects I have had the pleasure to work on.
+        <br/>
+        <p className="is-size-5">
+          Below are some of the projects I have had the pleasure to work on:
         </p>
       </div>
       <Portfolio />

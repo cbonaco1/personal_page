@@ -1,7 +1,13 @@
 .intro {
-  margin-bottom: 24px;
+  margin-bottom: 5rem;
 }
 
 .phrase {
-  margin: 24px 0px;
+  margin: 4rem 0px;
+  p {
+    line-height: 1;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
 }
