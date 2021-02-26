@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Home from 'sections/Home'
 import Work from 'sections/Work'
 import Skills from 'sections/Skills'
-import Education from 'sections/Education'
 import Contact from 'sections/Contact'
 
 export default function Index() {
@@ -19,7 +18,6 @@ export default function Index() {
         <Home />
         <Work />
         <Skills />
-        <Education />
         <Contact />
       </main>
     </div>
