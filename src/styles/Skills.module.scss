@@ -1,3 +1,11 @@
+@import './variables';
+
 .left {
   padding-bottom: 1rem;
+}
+
+@media screen and (min-width: $tablet) {
+  .skillsSection {
+    padding-top: 7rem;
+  }
 }

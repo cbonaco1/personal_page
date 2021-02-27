@@ -27,7 +27,7 @@ const toolsSkillsItems = [
 
 const Skills = () => {
   return (
-    <Section className="skills-section">
+    <Section className={`skills-section ${styles.skillsSection}`}>
       <div className={`${styles.left}`}>
         <h2>Skills</h2>
         <p className="is-size-5">
