@@ -1,9 +1,16 @@
-import React, { Fragment} from "react";
+import React, { Fragment } from "react";
 
-const SkillsItem = ({ title, list }) => {
+import styles from "styles/SkillsItem.module.scss";
+
+const SkillsItem = ({ title, icon, list }) => {
   return (
     <Fragment>
-      <h5 className="is-capitalized">{title}</h5>
+      <div className={`displayFlex ${styles.title}`}>
+        <h5 className="is-capitalized">{title}</h5>
+        <div className={`${styles.iconWrapper}`}>
+          {icon}
+        </div>
+      </div>
       <ul>
         {list.map((listItem, index) => {
           return (

@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCodeSlash, BsGearWideConnected, BsPencil } from "react-icons/bs";
 import Section from "./Section";
 import SkillsItem from "components/SkillsItem";
 
@@ -41,13 +42,13 @@ const Skills = () => {
       <div>
         <ul className="columns">
           <li className="column box">
-            <SkillsItem title="develop" list={developSkillsItem} />
+            <SkillsItem title="develop" icon={<BsCodeSlash />} list={developSkillsItem} />
           </li>
           <li className="column box">
-            <SkillsItem title="design" list={designSkillsItem} />
+            <SkillsItem title="design" icon={<BsPencil />} list={designSkillsItem} />
           </li>
           <li className="column box">
-            <SkillsItem title="tools" list={toolsSkillsItems} />
+            <SkillsItem title="tools" icon={<BsGearWideConnected />} list={toolsSkillsItems} />
           </li>
         </ul>
       </div>

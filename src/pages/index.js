@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { IconContext } from "react-icons";
+
 import Home from 'sections/Home'
 import Work from 'sections/Work'
 import Skills from 'sections/Skills'
@@ -15,10 +17,12 @@ export default function Index() {
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,700&display=swap" type="text/css"/>
       </Head>
       <main>
-        <Home />
-        <Work />
-        <Skills />
-        <Contact />
+        <IconContext.Provider value={{ size: '1.5em' }}>
+          <Home />
+          <Work />
+          <Skills />
+          <Contact />
+        </IconContext.Provider>
       </main>
     </div>
   )
