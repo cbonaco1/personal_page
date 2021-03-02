@@ -2,29 +2,25 @@
 
 .contact-section-wrapper {
   background-color: $primary;
-  position: relative;
   margin-top: 128px;
-  padding-bottom: 9rem;
+  padding-bottom: 3rem;
 }
 
 .contact-section {
   background-color: $white;
-  position: absolute;
-  top: -32px;
-  width: calc(100% - 3rem);
-  // sections have 1.5rem left/right padding
+  margin-top: -6rem;
 }
 
 .icon {
   border: 1px solid $grey-lightest;
   border-radius: 50%;
 }
-.icon:not(:last-child) {
+.icon {
   margin-bottom: 2rem;
 }
 
 @media screen and (min-width: $tablet) {
-  .icon:not(:last-child) {
+  .icon {
     margin-bottom: 0;
   }
 }
