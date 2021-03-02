@@ -15,6 +15,20 @@
   // sections have 1.5rem left/right padding
 }
 
+.icon {
+  border: 1px solid $grey-lightest;
+  border-radius: 50%;
+}
+.icon:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: $tablet) {
+  .icon:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: $desktop) {
   .contact-section {
     width: 960px;
