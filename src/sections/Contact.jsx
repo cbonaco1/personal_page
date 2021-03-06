@@ -6,7 +6,8 @@ import styles from "styles/Contact.module.scss";
 
 const myEmail = 'christian.bonacore@gmail.com';
 
-const copyEmailToClipboard = () => {
+const copyEmailToClipboard = (event) => {
+  event.preventDefault();
   navigator.clipboard.writeText(myEmail)
     .then(() => alert(`copied ${myEmail} to clipboard!`));
 }
@@ -25,23 +26,23 @@ const Contact = () => {
             </p>
           </div>
           <div className="column is-one-third-desktop">
-            {/* show msg on hover */}
-            {/* https://stackoverflow.com/questions/2011142/how-to-change-the-style-of-the-title-attribute-inside-an-anchor-tag */}
-            <ul className="columns is-mobile is-vcentered">
-              <li className={`column is-narrow ${styles.icon}`}>
+            <ul className={`columns is-mobile is-vcentered ${styles.iconList}`}>
+              <li className={`column is-narrow box ${styles.icon}`}>
                 <a href="tel:6314334415" title="631-433-4415">
                   <FaPhone size="2rem" />
                 </a>
               </li>
-              <li className={`column is-narrow is-clickable ${styles.icon}`} tabIndex="0" onClick={copyEmailToClipboard}>
-                <FaEnvelope size="2rem" />
+              <li className={`column is-narrow box is-clickable ${styles.icon}`} onClick={copyEmailToClipboard}>
+                <a href="#" title="Email me">
+                  <FaEnvelope size="2rem" />
+                </a>
               </li>
-              <li className={`column is-narrow ${styles.icon}`}>
+              <li className={`column is-narrow box ${styles.icon}`}>
                 <a href="https://www.linkedin.com/in/christianbonacore" title="LinkedIn" target="_blank">
                   <FaLinkedinIn size="2rem" />
                 </a>
               </li>
-              <li className={`column is-narrow ${styles.icon}`}>
+              <li className={`column is-narrow box ${styles.icon}`}>
                 <a href="https://twitter.com/CBonacore" title="Twitter" target="_blank">
                   <FaTwitter size="2rem" />
                 </a>

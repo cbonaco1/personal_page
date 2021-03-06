@@ -11,17 +11,38 @@
   margin-top: -6rem;
 }
 
-.icon {
-  border: 1px solid $grey-lightest;
-  border-radius: 50%;
-}
-.icon {
-  margin-bottom: 2rem;
+.iconList {
+  .icon {
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    position: relative;
+    a {
+      &[title]:hover::after,
+      &[title]:focus::after {
+        content: attr(title);
+        position: absolute;
+        bottom: calc(100% + 2px);
+        left: 25%;
+        color: $white;
+        background-color: $primary;
+        padding: 0.25rem;
+        white-space: nowrap;
+        border-radius: 6px;
+      }
+    }
+    // TODO - animate box-shadow on hover
+    // &:hover {
+    //  box-shadow: none; 
+    // }
+  }
 }
 
 @media screen and (min-width: $tablet) {
-  .icon {
-    margin-bottom: 0;
+  .iconList {
+    justify-content: space-around;
+    .icon {
+      margin-bottom: 0;
+    }
   }
 }
 
