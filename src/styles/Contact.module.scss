@@ -17,9 +17,8 @@
     border-radius: 50%;
     position: relative;
     a {
-      &[title]:hover::after,
-      &[title]:focus::after {
-        content: attr(title);
+      &[data-title]:hover::after {
+        content: attr(data-title);
         position: absolute;
         bottom: calc(100% + 2px);
         left: 25%;
@@ -30,10 +29,14 @@
         border-radius: 6px;
       }
     }
-    // TODO - animate box-shadow on hover
-    // &:hover {
-    //  box-shadow: none; 
-    // }
+    // bring up on hover
+    &:hover {
+      box-shadow: 0 0.5em 1.5em 0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+    }
+    // bring down on click
+    &:active {
+     box-shadow: 0 0.5em 0.5em -0.5em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+    }
   }
 }
 

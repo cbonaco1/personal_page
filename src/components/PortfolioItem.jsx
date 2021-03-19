@@ -24,7 +24,7 @@ const PortfolioItem = ({
         <div className={`${styles.description}`}>
           {description}
         </div>
-        <p><a href={liveUrl} className="button is-primary is-uppercase" target="_blank">visit website</a></p>
+        <p><a href={liveUrl} title={`visit ${title} website`} className="button is-primary is-uppercase" target="_blank">visit website</a></p>
       </div>
     </div>
   )

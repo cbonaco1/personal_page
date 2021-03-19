@@ -28,22 +28,22 @@ const Contact = () => {
           <div className="column is-one-third-desktop">
             <ul className={`columns is-mobile is-vcentered ${styles.iconList}`}>
               <li className={`column is-narrow box ${styles.icon}`}>
-                <a href="tel:6314334415" title="631-433-4415">
+                <a href="tel:6314334415" aria-label="Call me" data-title="Call me">
                   <FaPhone size="2rem" />
                 </a>
               </li>
               <li className={`column is-narrow box is-clickable ${styles.icon}`} onClick={copyEmailToClipboard}>
-                <a href="#" title="Email me">
+                <a href="#" aria-label="Email me" data-title="Email me">
                   <FaEnvelope size="2rem" />
                 </a>
               </li>
               <li className={`column is-narrow box ${styles.icon}`}>
-                <a href="https://www.linkedin.com/in/christianbonacore" title="LinkedIn" target="_blank">
+                <a href="https://www.linkedin.com/in/christianbonacore" aria-label="Connect with me on LinkedIn" data-title="LinkedIn" target="_blank">
                   <FaLinkedinIn size="2rem" />
                 </a>
               </li>
               <li className={`column is-narrow box ${styles.icon}`}>
-                <a href="https://twitter.com/CBonacore" title="Twitter" target="_blank">
+                <a href="https://twitter.com/CBonacore" aria-label="Follow me on Twitter" data-title="Twitter" target="_blank">
                   <FaTwitter size="2rem" />
                 </a>
               </li>
