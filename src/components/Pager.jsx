@@ -17,19 +17,23 @@ const Pager = () => {
               alt="Pager"
               height={100}
               width={100}
+              className={styles.pagerLogo}
             />
           </div>
         </div>
         <p className={`is-size-4 ${styles.jobTitle}`}>Senior Software Engineer, Web</p>
         <p className={`${styles.jobTime}`}><i>March 2018 - present</i></p>
-        <p className="is-size-5">This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. You know what? It is beets. I've crashed into a beet truck. Just my luck, no ice. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
+        <p className="is-size-5">
+          Pager helps consumers navigate their entire care journey, connecting them to the right care, in the right place, at the right time — like having a doctor in your family.
+          For more information, visit <a href="https://pager.com/" title="Pager">pager.com</a>.
+        </p>
       </div>
       <div className="column is-narrow">
         <Image 
-          src="/img/pager_office.png"
+          src="/img/pager_demo.png"
           alt="Pager"
-          height={500}
-          width={400}
+          height={455}
+          width={500}
         />
       </div>
     </div>
