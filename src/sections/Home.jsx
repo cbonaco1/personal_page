@@ -17,13 +17,13 @@ const Home = () => {
                 <p className="subtitle">Web Developer</p>
                 <p className="is-size-p">
                 I am a NYC-based software engineer passionate about building products that help people. 
-                I take pride in putting great detail into my work, and focusing on giving the user the best experience possible. 
+                I take pride in putting great detail into my work, and providing the best user experience possible. 
                 Outside of coding, I enjoy quoting Seinfeld, a good cup of coffee, or quoting Seinfeld over a good cup of coffee.
                 Read on to find out more about me and my story.
                 </p>
                 <div className={`displayFlex ${styles.buttonGroup}`}>
-                  <button className="button is-rounded is-primary">Contact Me</button>
-                  <button className="button is-rounded">Learn About Me</button>
+                  <a href="#contact" className="button is-rounded is-primary">Contact Me</a>
+                  <a href="#work" className="button is-rounded">Learn About Me</a>
                 </div>
               </div>
               <div className={`column ${styles.meColumn}`}>

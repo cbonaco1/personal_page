@@ -7,7 +7,7 @@ import styles from "styles/Work.module.scss";
 
 const Work = () => {
   return (
-    <Section>
+    <Section id="work">
       <h2>Work</h2>
       <Pager />
       <div className={`${styles.intro}`}>

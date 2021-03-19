@@ -50,7 +50,7 @@
 .buttonGroup {
   margin-top: 2rem;
   flex-direction: column;
-  button {
+  a {
     margin-bottom: 1.25rem;
     &:last-child {
       margin-bottom: 0rem;
@@ -95,7 +95,7 @@
   }
   .buttonGroup {
     flex-direction: row;
-    button {
+    a {
       margin-bottom: 0;
       margin-right: 1.5rem;
       &:last-child {

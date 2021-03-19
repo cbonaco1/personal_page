@@ -14,7 +14,7 @@ const copyEmailToClipboard = (event) => {
 
 const Contact = () => {
   return (
-    <div className={`${styles['contact-section-wrapper']}`}>
+    <div id="contact" className={`${styles['contact-section-wrapper']}`}>
       <Section containerClassName={`${styles['contact-section']} box`}>
         <h2>Contact Me</h2>
         <div className="columns is-vcentered">
