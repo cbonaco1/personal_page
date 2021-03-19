@@ -7,7 +7,8 @@ const PortfolioItem = ({
   title,
   logoImgSrc,
   description,
-  liveUrl
+  liveUrl,
+  logoImgHeight
 }) => {
   return (
     <div className="columns is-mobile is-vcentered">
@@ -15,7 +16,7 @@ const PortfolioItem = ({
         <Image 
           src={logoImgSrc}
           width={200}
-          height={200}
+          height={logoImgHeight || 200}
           alt={title}
         />
       </div>

@@ -17,7 +17,7 @@ const Portfolio = () => {
                   Built a brand new, responsive website for Bill's water construction business. 
                   The site serves as a portfolio for the different work Bill and his team does. 
                   I also coordinated with a
-                  {' '}<a href="https://www.instagram.com/p/CGVGUetDr6f" target="_blank">freelance designer</a>{' '}
+                  {' '}<a title="sg__creative Instagram" href="https://www.instagram.com/p/CGVGUetDr6f" target="_blank">freelance designer</a>{' '}
                   on a new logo for Bill's business.            
                 </p>
                 <p>Add pics from shoot at Bill's with Sophia</p>
@@ -47,6 +47,7 @@ const Portfolio = () => {
           <PortfolioItem 
               title="Dr. Jacky Scott, Ed.D."
               logoImgSrc="/img/jacky_scott.JPG"
+              logoImgHeight={250}
               description={
                 <p>
                   Jacky was a referral to me from a previous client, and reached out to me
@@ -63,6 +64,7 @@ const Portfolio = () => {
           <PortfolioItem 
               title="Long Island ABA"
               logoImgSrc="/img/longislandaba-logo.jpg"
+              logoImgHeight={100}
               description={
                 <p>
                   Developed web site for firm specializing in ABA (Applied Behavior Analysis) research for kids with Autism.
